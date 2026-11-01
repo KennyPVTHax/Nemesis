@@ -1,0 +1,18 @@
+{
+  "source": "4-index.html",
+  "sha256": "1293fcff7a500f0f4bb21cf4da4d736d797a563508dbad21fe7e8ce3bdfead6a",
+  "extracted": [
+    "style blocks (excluding anti-inspection CSS)",
+    "Lucide SVG path arrays",
+    "s1 return expression and local state declaration",
+    "p1 return expression",
+    "h1 error and m1 skeleton renderers"
+  ],
+  "wrapperChanges": [
+    "Disconnected state and events; no original network handlers",
+    "Live-only status labels made explicitly offline; hardcoded 4:24 time removed",
+    "smsSearchResults compatibility binding (original undefined variable)",
+    "Escape and Android back close SMS search"
+  ],
+  "icons": 29
+}
