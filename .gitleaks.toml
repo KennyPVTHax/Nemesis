@@ -1,9 +1,3 @@
 [extend]
 useDefault = true
-
-[[allowlists]]
-description = "Reviewed SHA-256 provenance digests; not API keys"
-condition = "AND"
-paths = ['''(^|/)docs/phase2/BASELINE\.json$''']
-regexTarget = "secret"
-regexes = ['''^[a-f0-9]{64}$''']
+# No detector suppressions. See docs/SECURITY_REVIEW.md for reviewed SHA-256 false positives.
