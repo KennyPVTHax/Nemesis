@@ -1,0 +1,27 @@
+{
+  "1-surgeignore": {
+    "path": "/tmp/codex-remote-attachments/01a18514-b0c2-7636-9812-3cf6d0c9b069/77f55cdc-6ca4-4f04-bf07-59bc6d6955c9/1-surgeignore",
+    "bytes": 17,
+    "sha256": "82aab09128b8a3feee151e78f30bbea617c9e6fab29bc3a3a338dc992bcee08d"
+  },
+  "2-200.html": {
+    "path": "/tmp/codex-remote-attachments/01a18514-b0c2-7636-9812-3cf6d0c9b069/77f55cdc-6ca4-4f04-bf07-59bc6d6955c9/2-200.html",
+    "bytes": 925799,
+    "sha256": "1293fcff7a500f0f4bb21cf4da4d736d797a563508dbad21fe7e8ce3bdfead6a"
+  },
+  "3-CNAME": {
+    "path": "/tmp/codex-remote-attachments/01a18514-b0c2-7636-9812-3cf6d0c9b069/77f55cdc-6ca4-4f04-bf07-59bc6d6955c9/3-CNAME",
+    "bytes": 21,
+    "sha256": "e596ec303e63edfc706ff615020ce97d0fdce6a48ca7808589fab1921931c12a"
+  },
+  "4-index.html": {
+    "path": "/tmp/codex-remote-attachments/01a18514-b0c2-7636-9812-3cf6d0c9b069/77f55cdc-6ca4-4f04-bf07-59bc6d6955c9/4-index.html",
+    "bytes": 925799,
+    "sha256": "1293fcff7a500f0f4bb21cf4da4d736d797a563508dbad21fe7e8ce3bdfead6a"
+  },
+  "5-index.html.bak": {
+    "path": "/tmp/codex-remote-attachments/01a18514-b0c2-7636-9812-3cf6d0c9b069/77f55cdc-6ca4-4f04-bf07-59bc6d6955c9/5-index.html.bak",
+    "bytes": 893443,
+    "sha256": "03ac69798436219826120bef5eeb1c92d997fbdf72775a2fdcf2975f786bdb7c"
+  }
+}

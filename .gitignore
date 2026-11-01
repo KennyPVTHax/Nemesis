@@ -70,3 +70,9 @@ Thumbs.db
 *.tar
 *.tar.gz
 /uploads/
+
+# Nested hybrid projects and generated verification output
+**/node_modules/
+**/dist/
+/artifacts/
+**/__pycache__/
