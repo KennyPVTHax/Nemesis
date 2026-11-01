@@ -1,28 +1,11 @@
-# Backend source review — 2026-11-02
+# Deployed backend source review
 
-## Evidence / scope
-User-provided `NEMESIS_BACKEND_SOURCE_REVIEW.tar.gz` inspected. Archive SHA-256:
-`5a239b8470cee190ff48cde7989b044db7e9f4de3cf5bd4d98cb9a7d018e1e6a`.
+All ten Python modules match the supplied SHA256SUMS.txt byte-for-byte; no backend implementation or API/schema changed. main.py includes auth, registration and Firebase routers. The export has no requirements lock, systemd/nginx units, databases, environment files, Firebase Rules or service accounts. New requirements-review.txt is a locally tested dependency selection, not a recovered production lock.
 
-**Ten Python files** were extracted in a local workspace; 10/10 matched the archive's SHA256SUMS.txt; all passed Python syntax parsing. This is a **source-only export** from `/opt/nemesis/backend`. It excludes the Android app, original website, service unit files, Nginx configuration, runtime database and credentials. It does **not** prove the entire running project is backed up.
+No inlined credential values were found in the inspected modules. Telegram token is read from the server environment. Database/service-account paths are configuration references, not included credentials. Originals remain outside the repository at /workspace/private-source-review/backend-original; no redacted backend copy was needed.
 
-## Credentials review
-Automated checks found no inlined Telegram bot-token patterns, Google API key patterns, GitHub PAT patterns, PEM private keys, AWS access-key IDs, or obvious literal secret assignments. Public URLs, including the production backend address, are present. Regex-based scanning is **not exhaustive**; manual review and a second scanner are recommended before any public release. Do not import `/etc/nemesis`, `/opt/nemesis/data`, production databases, logs or private key material.
+**Confirmed defect requiring separate approval:** auth_api.verify increments attempts inside a SQLite connection context and then raises HTTPException on a wrong code. The context rolls back the increment. The strict expected-failure regression reproduces this locally. The existing code is preserved, not fixed or redeployed. Do not assert the advertised three-attempt protection is verified. Review transaction handling and add an approved fix before relying on it. Bot /help text also incorrectly says registration is future functionality despite implemented commands; source retained unchanged.
 
-## Modules present
-- `account_store.py`: account schema, Argon2id owner.
-- `auth_api.py`: password + Telegram OTP, bearer sessions.
-- `telegram_bot.py`, `telegram_link.py`: Telegram commands, owner linking.
-- `registration_store.py`, `registration_api.py`: redeem keys, registration, setup form.
-- `firebase_pool.py`, `firebase_api.py`, `firebase_cli.py`: allocation inventory, owner-approved link workflow.
-- `main.py`: FastAPI route inclusion.
+Firebase modules manage inventory, allocation and approved URL disclosure. URLs do not confer authorization. There is no Firebase Rules source or live Firebase connectivity test in the export. Operator CLI validation is not a replacement for deployment OS permissions. No CLI, bot poller or production process was run here. main.py has import-time initialization: tests must redirect account_store.DB_PATH to temporary storage before importing it. Do not run it against production paths during review.
 
-## Known implementation/verification gaps
-- Source export contains no Android or website files; these must be supplied and compared to originals.
-- Firebase pool is *inventory/allocation* logic, not evidence of connectivity, Rules, or production-grade isolation; service credentials and actual Firebase projects aren't included.
-- Telegram `/start` help text still says registration commands will be added, although the bot code implements them.
-- Verify renewal, account expiry, repeated OTP attempts, audit/error handling and customer-level authorization with automated tests; no test suite was included.
-- Preserving inactive monitoring features requires the **actual original code**; avoid writing imagined placeholders as if already preserved.
-
-## Import status
-This review branch contains preservation documentation and a verified manifest. The backend files must be imported from the validated export without editing; only then should their status be marked "source committed". No production VPS files have been changed by this review.
+Initial review documentation from source-review-2026-11-02 is preserved in prior-review/ and its existing commits remain ancestors of this branch.
