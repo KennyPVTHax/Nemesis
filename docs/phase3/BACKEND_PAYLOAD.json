@@ -1,0 +1,74 @@
+{
+  "firebase_cloud.py": {
+    "original": null,
+    "current": "e3a8c6dfa0240f960fbe55e175eb07e90bc03ecea9fb5ff06d6c9c8e8ea79ad8"
+  },
+  "auth_api.py": {
+    "original": "7c031406d7fb76d096fa0641d784b837234535cd06484fa747405c4dd3452de9",
+    "current": "7c031406d7fb76d096fa0641d784b837234535cd06484fa747405c4dd3452de9"
+  },
+  "registration_api.py": {
+    "original": "cfebc09aafc167b5de01267e4fb2ff0896e869f32fce7547fbb0f775bb6329d4",
+    "current": "cfebc09aafc167b5de01267e4fb2ff0896e869f32fce7547fbb0f775bb6329d4"
+  },
+  "firebase_pool.py": {
+    "original": "278cb7baed5479f8bf6b0ce5fc285af69c2c93b6dc0522ef3520bfe588d5e501",
+    "current": "00b83730c767b9950491765c7da769bbcc319d24689ee96884c76ae463eb5bae"
+  },
+  "firebase_telegram.py": {
+    "original": null,
+    "current": "ee57cffa436c956d1b2cfa0e452893e839d8058c71d5d4d06bc1d85834721edd"
+  },
+  "firebase_migration.py": {
+    "original": null,
+    "current": "64e3e6ced9011bb0a112528d6f4455ee27beda60e8cc4c5026f481c2bfffeda9"
+  },
+  "telegram_bot.py": {
+    "original": "92e399fa043b2fed116ec739f3ca3120c892b85c27fddd33f9db11a2d65786a4",
+    "current": "408067b238e36d91c900a62bd77897622f54adc4bbfce9abdce2b2644376e6cc"
+  },
+  "firebase_gateway.py": {
+    "original": null,
+    "current": "b6fd90b0cacd165afcacc2ae910443884086d3fa7538bb5abffde4a327cfa47d"
+  },
+  "registration_store.py": {
+    "original": "4402fa46de99d6bf48e3fc5316e5b4516640c705e825ca309c1e2b5621003bc7",
+    "current": "4402fa46de99d6bf48e3fc5316e5b4516640c705e825ca309c1e2b5621003bc7"
+  },
+  "firebase_config.py": {
+    "original": null,
+    "current": "cca6046fc963bcb58d6ae97837488e3b39163bf7038d0d4d2a13952f897d8688"
+  },
+  "account_store.py": {
+    "original": "b6c9a2116667451c3e496d5f23817a9a8e37c61f91b8e52ac07bd46502b538c2",
+    "current": "b6c9a2116667451c3e496d5f23817a9a8e37c61f91b8e52ac07bd46502b538c2"
+  },
+  "firebase_worker.py": {
+    "original": null,
+    "current": "323187788ad38f9f806ff99ea8f1aeafaf0d9d10211046e9ad45229ced5040ab"
+  },
+  "firebase_api.py": {
+    "original": "9e499720cf5dfbb263a07c892b4a96c47be8591f2fa768dfab430981d25328e7",
+    "current": "066cec394a2c9faf20b54782a48a2afc8237c18076655e37de11e8fba80a653f"
+  },
+  "firebase_cli.py": {
+    "original": "79c8cd23881cb3882679cc26acf8ddc799c7576afb8e0c2aa752e6278ad3b53a",
+    "current": "1fc790f17dc76d7f0660cd0ed2481d7b3744a57886a8cb4e506713c120407f05"
+  },
+  "main.py": {
+    "original": "d69c8934b00cb01be45ee860af0a8b7c62dc57fd2a42bb6e7e51e17acfe0907b",
+    "current": "2c8f59f0be664a6226099891fa4312a4f1cec5fa4a9621a164074b42dcffbd09"
+  },
+  "firebase_manager_store.py": {
+    "original": null,
+    "current": "1d17d068db1b8670a8212a428151b215d3909ed563a4160c20030d232393f1a3"
+  },
+  "telegram_link.py": {
+    "original": "2bbb32a13dd8cbca8bec36e69791f9a38bf4331f54decff24cd434cad39181fd",
+    "current": "2bbb32a13dd8cbca8bec36e69791f9a38bf4331f54decff24cd434cad39181fd"
+  },
+  "firebase_jobs.py": {
+    "original": null,
+    "current": "a58ea13743b2803191a4239acc79c91ab9c4c56610773fbc818a9ebea72afc09"
+  }
+}

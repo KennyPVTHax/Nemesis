@@ -44,6 +44,9 @@ def test_three_wrong_attempts_are_persisted(db):
 
 def test_firebase_approval_and_customer_isolation(db):
     with account_store.connect() as c:c.execute('INSERT INTO firebase_instances(label,database_url,credential_path,added_at) VALUES(?,?,?,?)',('synthetic','https://synthetic-test.firebaseio.com','/isolated/nonexistent.json',db))
+    with account_store.connect() as c:
+        iid=c.execute('SELECT id FROM firebase_instances').fetchone()[0]
+        c.execute("INSERT INTO firebase_manager_instances(instance_id,state,verified_at) VALUES(?,'AVAILABLE',?)",(iid,int(time.time())))
     assert firebase_pool.summary(2)['assigned'] is True
     assert firebase_pool.summary(3)['assigned'] is False
     assert firebase_pool.approved_url(2) is None
@@ -66,7 +69,8 @@ def test_source_syntax_and_checksum():
     for line in (root/'docs/BACKEND_EXPORT_SHA256SUMS.txt').read_text().splitlines():
         digest,name=line.split(maxsplit=1)
         name=name.lstrip('*')
-        p=root/('legacy/backend-baseline/auth_api.py' if name=='backend/auth_api.py' else name)
+        changes={x['path']:x for x in __import__('json').loads((root/'docs/phase3/SOURCE_CHANGES.json').read_text())['files']}
+        p=root/(changes[name]['baseline_path'] if name in changes else ('legacy/backend-baseline/auth_api.py' if name=='backend/auth_api.py' else name))
         assert hashlib.sha256(p.read_bytes()).hexdigest()==digest;ast.parse(p.read_text())
     patch=__import__('json').loads((root/'docs/security/OTP_SOURCE_CHECKSUMS.json').read_text())
     assert hashlib.sha256((root/'backend/auth_api.py').read_bytes()).hexdigest()==patch['patched_sha256']

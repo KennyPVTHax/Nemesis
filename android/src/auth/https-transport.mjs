@@ -1,5 +1,5 @@
 import {API_ORIGIN} from './api-auth.mjs';
-const methods=new Map([['/auth/login','POST'],['/auth/verify','POST'],['/auth/me','GET'],['/auth/logout','POST']]);
+const methods=new Map([['/auth/login','POST'],['/auth/verify','POST'],['/auth/me','GET'],['/auth/logout','POST'],['/firebase/status','GET'],['/firebase/capabilities','GET'],['/firebase/request-link','POST'],['/firebase/approved-link','GET']]);
 function validate(url,options){
  const u=new URL(url);
  if(u.origin!==API_ORIGIN||u.username||u.password||u.search||u.hash||methods.get(u.pathname)!==options.method)throw new Error('Unsupported authentication destination.');
@@ -8,7 +8,7 @@ function validate(url,options){
  return u.href;
 }
 function abortError(){return new DOMException('Authentication request cancelled.','AbortError')}
-/** Uses Android's standard HTTPS transport only for these four fixed API routes.
+/** Uses Android's standard HTTPS transport only for fixed customer API routes.
  * No fetch patch, redirect, proxy, TLS override, URL selector or token persistence.
  * Native HTTP cannot be physically aborted; a late result is discarded on abort.
  */
