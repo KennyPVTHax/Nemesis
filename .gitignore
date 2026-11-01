@@ -1,0 +1,72 @@
+# Python / FastAPI
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Local/runtime/application data (never publish)
+.env
+.env.*
+!.env.example
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+*.bak
+*.backup
+*.dump
+*.sql.gz
+/data/
+/logs/
+/backups/
+/secrets/
+/private/
+*.log
+
+# Telegram/Firebase/cloud credentials
+*service-account*.json
+*service_account*.json
+*firebase-adminsdk*.json
+*credentials*.json
+*secret*.json
+!docs/example-secret-format.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.asc
+google-services.json
+GoogleService-Info.plist
+
+# Android / Gradle / Capacitor build products
+.gradle/
+**/build/
+**/.cxx/
+*.apk
+*.aab
+*.apks
+local.properties
+*.hprof
+/node_modules/
+/dist/
+/android/.idea/
+/android/.gradle/
+*.iml
+
+# Machine-specific IDE files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Private backups and original user/customer media
+*.zip
+*.7z
+*.tar
+*.tar.gz
+/uploads/
