@@ -1,0 +1,1 @@
+This is the exact imported auth_api.py from commit 8e5bc36f5bf88e6fdf9fd02dc1406d77befd8ed1, retained for checksum verification only. It contains the confirmed attempt-counter rollback defect. It is not imported by the running backend and must not replace the fixed source except during an explicitly reviewed operational rollback. Original export manifests remain unchanged.

@@ -1,0 +1,7 @@
+{
+  "baseline_commit": "8e5bc36f5bf88e6fdf9fd02dc1406d77befd8ed1",
+  "original_path": "backend/auth_api.py",
+  "preserved_baseline_path": "legacy/backend-baseline/auth_api.py",
+  "original_sha256": "6cabe5ad6729bb5d8dc93519a2c3b99ea8cc40134a0b15bef2ae89241d44fdd4",
+  "patched_sha256": "7c031406d7fb76d096fa0641d784b837234535cd06484fa747405c4dd3452de9"
+}
