@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Target 35: retain framework adjustResize ownership instead of forced edge-to-edge. -->
+    <style name="AppTheme.NoActionBar" parent="AppTheme.NoActionBarBase">
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+    </style>
+    <style name="AppTheme.NoActionBarLaunch" parent="Theme.SplashScreen">
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+        <item name="windowSplashScreenBackground">#0c020d</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/AppTheme.NoActionBar</item>
+    </style>
+</resources>

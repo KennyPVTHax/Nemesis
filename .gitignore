@@ -70,3 +70,11 @@ Thumbs.db
 *.tar
 *.tar.gz
 /uploads/
+
+# Nested hybrid projects and generated verification output
+**/node_modules/
+**/dist/
+/artifacts/
+**/__pycache__/
+# Also ignore a local dependency symlink (not only directories).
+**/node_modules

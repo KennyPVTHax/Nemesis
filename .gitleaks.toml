@@ -1,0 +1,3 @@
+[extend]
+useDefault = true
+# No detector suppressions. See docs/SECURITY_REVIEW.md for reviewed SHA-256 false positives.

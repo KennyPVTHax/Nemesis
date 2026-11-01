@@ -1,0 +1,707 @@
+[
+  {
+    "source": "android-app/package-lock.json",
+    "public_path": "android/package-lock.json",
+    "sha256": "a6acc0186da8670a596c8f567eab9aa8b0493f3a9c63cabcf3b3872730cb728a"
+  },
+  {
+    "source": "android-app/THIRD_PARTY_NOTICES.md",
+    "public_path": "android/THIRD_PARTY_NOTICES.md",
+    "sha256": "2bd652bbed030b5b58e4ec625993da91a9b3938da359a7e205a3e685c7b7e4b2"
+  },
+  {
+    "source": "android-app/.gitignore",
+    "public_path": "android/.gitignore",
+    "sha256": "a82f03b40ec88744541c12b99b1658f043682729281a7fec07fd8eba95e545ab"
+  },
+  {
+    "source": "android-app/package.json",
+    "public_path": "android/package.json",
+    "sha256": "2636b63d21c174d7ef591bfbee3eefdc5c8b3e38f00fb8d9ea63906ad30927e8"
+  },
+  {
+    "source": "android-app/vite.config.js",
+    "public_path": "android/vite.config.js",
+    "sha256": "abb938c6a666042edb0195c7b431f3b3192ecef4ee9bff2e810fdba5025bf4e1"
+  },
+  {
+    "source": "android-app/index.html",
+    "public_path": "android/index.html",
+    "sha256": "cdfabe2b3a78afd5e518455cf55bee24e036031845093806bc3eb10967454942"
+  },
+  {
+    "source": "android-app/capacitor.config.json",
+    "public_path": "android/capacitor.config.json",
+    "sha256": "1a5211e5a2ec4938f05d5b1e7bf2c2e6c05dfa36b37a4482ceeebdcd7908eeb1"
+  },
+  {
+    "source": "android-app/README.md",
+    "public_path": "android/README.md",
+    "sha256": "fbb021701c6f36468cb4a7b873ccd5ba3382a52ffe814033e61db75d3942ad0b"
+  },
+  {
+    "source": "android-app/scripts/preview-board.mjs",
+    "public_path": "android/scripts/preview-board.mjs",
+    "sha256": "419eb4c742d75e91d9e66ea75240404c623d3ecd870f7ffd697a2d98989e2d6e"
+  },
+  {
+    "source": "android-app/scripts/apply-branding.mjs",
+    "public_path": "android/scripts/apply-branding.mjs",
+    "sha256": "99a733452117a54414523c527f328a4f156ea26f95697661f31210562b25140d"
+  },
+  {
+    "source": "android-app/scripts/export-logo.mjs",
+    "public_path": "android/scripts/export-logo.mjs",
+    "sha256": "2d839e748976ddd103673bf88365ce04cc992a373f821e08122d3bce8360eee0"
+  },
+  {
+    "source": "android-app/scripts/extract-ui.mjs",
+    "public_path": "android/scripts/extract-ui.mjs",
+    "sha256": "9759b440b4a7c8851153f493e2ded4aff74e45c6abba64f4eed8b229e506ebba"
+  },
+  {
+    "source": "android-app/scripts/verify-apk.py",
+    "public_path": "android/scripts/verify-apk.py",
+    "sha256": "4080df580084a48ae31a25ffd1e59da4fab869cf1efafde9fe62e5ed3458d0ee"
+  },
+  {
+    "source": "android-app/scripts/build-android.sh",
+    "public_path": "android/scripts/build-android.sh",
+    "sha256": "2bef4232f548a5ac1da7de4cd45979a9f8f1c9f208f5c8e8b2179a6ae69280a1"
+  },
+  {
+    "source": "android-app/android/variables.gradle",
+    "public_path": "android/android/variables.gradle",
+    "sha256": "6b4439bc35170fbb602be71f5957102ce2eddcdd1165dedff663182da2f2f8ac"
+  },
+  {
+    "source": "android-app/android/.gitignore",
+    "public_path": "android/android/.gitignore",
+    "sha256": "065e4a92a240fe11a0ea230491ad9dabef143f5fd5a3e6884ad6f0395666a971"
+  },
+  {
+    "source": "android-app/android/settings.gradle",
+    "public_path": "android/android/settings.gradle",
+    "sha256": "6ce098d15ebd69b44c4ecd786bca1bdc366340d2459b2af4d7bb0ab317aa9669"
+  },
+  {
+    "source": "android-app/android/capacitor.settings.gradle",
+    "public_path": "android/android/capacitor.settings.gradle",
+    "sha256": "8c79463755fe8086390e9e6c702979db88df37d7769e50fc958b30eaebc64c78"
+  },
+  {
+    "source": "android-app/android/gradle.properties",
+    "public_path": "android/android/gradle.properties",
+    "sha256": "3bab15c5b8bc4c2f4b6cf525497d15ad4abca53a460e6dd2eb0f0135817d31e6"
+  },
+  {
+    "source": "android-app/android/gradlew",
+    "public_path": "android/android/gradlew",
+    "sha256": "a3648413b47ef77af21d5ebc36c687c7d103aaef3e17f33de7d4f080a6f300a3"
+  },
+  {
+    "source": "android-app/android/gradlew.bat",
+    "public_path": "android/android/gradlew.bat",
+    "sha256": "57931b17dd228e5c24dac90e815d0bf82477e831a4618dfab4136f5446b42a9f"
+  },
+  {
+    "source": "android-app/android/build.gradle",
+    "public_path": "android/android/build.gradle",
+    "sha256": "9c4d6e6418d24f903a6d8710a3d829acbf4dbd14959a6617643f5e03f5bd53ae"
+  },
+  {
+    "source": "android-app/public/nemesis-logo.jpg",
+    "public_path": "android/public/nemesis-logo.jpg",
+    "sha256": "2662b265f5a176207968164694f3069e522792ba8acdb3567a1273bb9a74676d"
+  },
+  {
+    "source": "android-app/public/nemesis-logo.png",
+    "public_path": "android/public/nemesis-logo.png",
+    "sha256": "da6afd65a75a2bd470910c275c9aae54fd696f3001486394bb4c16d739090f05"
+  },
+  {
+    "source": "android-app/public/nemesis-mark.png",
+    "public_path": "android/public/nemesis-mark.png",
+    "sha256": "75c8158f750cf470b348262cadf0c84eb695aa9986ab928299ea83e37b2bd9ac"
+  },
+  {
+    "source": "android-app/licenses/Capacitor-MIT.txt",
+    "public_path": "android/licenses/Capacitor-MIT.txt",
+    "sha256": "9c6ebf3e5ab832ba4d5af38f340978e1fedbfee6e3d23662dfdb8917a9d864dd"
+  },
+  {
+    "source": "android-app/licenses/Inter-OFL.txt",
+    "public_path": "android/licenses/Inter-OFL.txt",
+    "sha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3"
+  },
+  {
+    "source": "android-app/licenses/JetBrainsMono-OFL.txt",
+    "public_path": "android/licenses/JetBrainsMono-OFL.txt",
+    "sha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3"
+  },
+  {
+    "source": "android-app/licenses/Lucide-ISC.txt",
+    "public_path": "android/licenses/Lucide-ISC.txt",
+    "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57"
+  },
+  {
+    "source": "android-app/licenses/Outfit-OFL.txt",
+    "public_path": "android/licenses/Outfit-OFL.txt",
+    "sha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3"
+  },
+  {
+    "source": "android-app/licenses/React-MIT.txt",
+    "public_path": "android/licenses/React-MIT.txt",
+    "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+  },
+  {
+    "source": "android-app/src/main.jsx",
+    "public_path": "android/src/main.jsx",
+    "sha256": "5b8b4538f8e0b28b4902b012264e43c71890c225a0016bd139ad6773b16e4a22"
+  },
+  {
+    "source": "android-app/src/App.jsx",
+    "public_path": "android/src/App.jsx",
+    "sha256": "a2085e470a1400bb81fc46ca3792ff2df40bb778b78ca30c0914f385bb629f59"
+  },
+  {
+    "source": "android-app/src/styles.mjs",
+    "public_path": "android/src/styles.mjs",
+    "sha256": "e97d48a7f8f2e6cd1b9a46545b17c5ea2d2ecacabf9d2f441cfeb47c358630ab"
+  },
+  {
+    "source": "android-app/src/mobile.css",
+    "public_path": "android/src/mobile.css",
+    "sha256": "7680bf333abaf06e6236c236e7993274c4858b54b260b9c3f0f8eda28b0802dd"
+  },
+  {
+    "source": "android-app/src/ui-refresh.css",
+    "public_path": "android/src/ui-refresh.css",
+    "sha256": "e8060c7d9f35072f35b8d2b2ac50e1421e75f4409b33f089a818493f80ca17f7"
+  },
+  {
+    "source": "android-app/tests/branding.test.mjs",
+    "public_path": "android/tests/branding.test.mjs",
+    "sha256": "419099e241ba9af92b0b602efc64ed2fb902b9140e50b677029de9d1bf10aa74"
+  },
+  {
+    "source": "android-app/tests/keyboard.test.mjs",
+    "public_path": "android/tests/keyboard.test.mjs",
+    "sha256": "5f4a14cc1ff5312563a95b9c3026044f6e23fbd7581bfed609a26b80d06cab7d"
+  },
+  {
+    "source": "android-app/tests/harness.jsx",
+    "public_path": "android/tests/harness.jsx",
+    "sha256": "eb933d399449bfcda79b6cdecbec44b9157252a1fc967d5614a3732d88105191"
+  },
+  {
+    "source": "android-app/tests/browser.mjs",
+    "public_path": "android/tests/browser.mjs",
+    "sha256": "e3d43a57bd814e877ab74f9134510a77e8a1a7f2b065c188decd4cbb86f42df9"
+  },
+  {
+    "source": "android-app/tests/auth.test.mjs",
+    "public_path": "android/tests/auth.test.mjs",
+    "sha256": "2a69ffe2a055f443931efead4434fd6076e7bbd00ea4b9cd0acedd34ee6c58d8"
+  },
+  {
+    "source": "android-app/tests/https-transport.test.mjs",
+    "public_path": "android/tests/https-transport.test.mjs",
+    "sha256": "ce4c6f54a0229cec3ff4a18e87544ce54ac11aa07723fb74d675cc5692b82865"
+  },
+  {
+    "source": "android-app/tests/harness.html",
+    "public_path": "android/tests/harness.html",
+    "sha256": "63fc4cbef18f00d39dace50a41b45dbc23ed8691676215a41b3d2b7b6d0d3add"
+  },
+  {
+    "source": "android-app/tests/live-contract.test.mjs",
+    "public_path": "android/tests/live-contract.test.mjs",
+    "sha256": "d440b08b42fba3bbfd948ba8cdc467ad2e8728f9cddb2179164133411a15455c"
+  },
+  {
+    "source": "android-app/tests/vault-queue.test.mjs",
+    "public_path": "android/tests/vault-queue.test.mjs",
+    "sha256": "a00986093bf30e54782ef2f1e3bc3b490605bda8717bda970d6afc98e8fc01ac"
+  },
+  {
+    "source": "android-app/tests/isolation.test.mjs",
+    "public_path": "android/tests/isolation.test.mjs",
+    "sha256": "f09a1ec6bd3d18c97467ae6b9dd0cb478513c4ffbd7370930b48d6e0eaab6c33"
+  },
+  {
+    "source": "android-app/android/app/.gitignore",
+    "public_path": "android/android/app/.gitignore",
+    "sha256": "99c54e51ee601a60fbde8016b2cbf717483bc2e92773be86c9247d02a7fa6ea4"
+  },
+  {
+    "source": "android-app/android/app/proguard-rules.pro",
+    "public_path": "android/android/app/proguard-rules.pro",
+    "sha256": "1cf8c57e8f79c250b0af9c1a5a4edad71a5c348a79ab70243b6bae086c150ad2"
+  },
+  {
+    "source": "android-app/android/app/capacitor.build.gradle",
+    "public_path": "android/android/app/capacitor.build.gradle",
+    "sha256": "d9b722bc9784798bd46d7340c87ecb028ccf99cfbf599d9e855a52efdfe817b8"
+  },
+  {
+    "source": "android-app/android/app/build.gradle",
+    "public_path": "android/android/app/build.gradle",
+    "sha256": "79e1863768f00879c0640b55aa932dac5ce8ecf5d3e6357ebac5dfc9873e438b"
+  },
+  {
+    "source": "android-app/android/capacitor-cordova-android-plugins/cordova.variables.gradle",
+    "public_path": null,
+    "sha256": "268844885a8d04cf34044ffbe362499ca14836fd1123d05e64f94b12798a8bb9",
+    "reason": "Capacitor-generated configuration; reproducibly regenerated by cap sync; original retained in workspace"
+  },
+  {
+    "source": "android-app/android/capacitor-cordova-android-plugins/build.gradle",
+    "public_path": null,
+    "sha256": "8f5cea7b546643b388fc1f3a83633cc12657fea59fec8ae19d76253cb6c13cc1",
+    "reason": "Capacitor-generated configuration; reproducibly regenerated by cap sync; original retained in workspace"
+  },
+  {
+    "source": "android-app/android/app/src/main/AndroidManifest.xml",
+    "public_path": "android/android/app/src/main/AndroidManifest.xml",
+    "sha256": "11cd0bd3430abf8dc7eee791112570fd93337f724768c96961c7d36935f46d29"
+  },
+  {
+    "source": "android-app/android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+    "public_path": "android/android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+    "sha256": "d4045ae8fac1f0807e6b24eb34e68409a9a235df9d1a3f896fb8c9a49424363d"
+  },
+  {
+    "source": "android-app/android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+    "public_path": "android/android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+    "sha256": "d6cdfa659876ff4e505304ee02bf4258caac952aaa570eadc31e0d1f82641981"
+  },
+  {
+    "source": "android-app/android/app/src/androidTest/java/com/nemesis/panel/dev/KeystoreSessionStoreInstrumentedTest.java",
+    "public_path": "android/android/app/src/androidTest/java/com/nemesis/panel/dev/KeystoreSessionStoreInstrumentedTest.java",
+    "sha256": "b9d91d343c9ab83e6044efbea0c37f98e76c64807effa3f23896e50db012c02b"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/drawable-land-xxhdpi/splash.png",
+    "public_path": "android/android/app/src/main/res/drawable-land-xxhdpi/splash.png",
+    "sha256": "42aa26392546fcdee1b8d3ac6d4b41bfcceb41dc6a4f3a3c30c24a8a8f4db862"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/drawable-land-xxxhdpi/splash.png",
+    "public_path": "android/android/app/src/main/res/drawable-land-xxxhdpi/splash.png",
+    "sha256": "60393ce8636fd263e4e1fea3fd4ab2de948c6295e898fda9b50ac4e5283be809"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/drawable-port-hdpi/splash.png",
+    "public_path": "android/android/app/src/main/res/drawable-port-hdpi/splash.png",
+    "sha256": "c5015f4ba3628392b538386c5e210f0b94f352a3160adab934fd0311972137ca"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png",
+    "public_path": "android/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png",
+    "sha256": "bb4b873403fce04b80fa09b8c62ef92898465a67ad90233f98c30fe77df3b646"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+    "public_path": "android/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+    "sha256": "e91dac3fac0c5bdc5cdd519af7aa804f4e1bb7981752edb4bc250c1ce4f4910f"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png",
+    "public_path": "android/android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png",
+    "sha256": "dc50de6de82f3ab3a81bc57abff1e10c6e2a8c4e14e6933be1bd825f1625fa81"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/drawable-land-mdpi/splash.png",
+    "public_path": "android/android/app/src/main/res/drawable-land-mdpi/splash.png",
+    "sha256": "5cf98b4451bd99b20df26f9e608a46946118be6b0ae90762f9ca1786a30c76ff"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+    "public_path": "android/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+    "sha256": "9c3a7e0a6515c6e1a7ae834a9ae430311ebc3241f7b2e5e7f0460aa690709a7c"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+    "public_path": "android/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+    "sha256": "9c3a7e0a6515c6e1a7ae834a9ae430311ebc3241f7b2e5e7f0460aa690709a7c"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
+    "public_path": "android/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
+    "sha256": "f21b1c96cdd68048a57422321663dbd7e57fbbb82ae158729c848e124fd630df"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "public_path": "android/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "sha256": "ea15f377a227fde89092686eaf8cbb305204c7b5865d82add3f4a799ed7cdf53"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png",
+    "public_path": "android/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png",
+    "sha256": "73817d94cc8bf3440a068bac4a34192bc890370a84692e340faec085f2983463"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/drawable-land-xhdpi/splash.png",
+    "public_path": "android/android/app/src/main/res/drawable-land-xhdpi/splash.png",
+    "sha256": "22f87e1e3bc89aa01a7dbc39c9a4db058cd0bf4ad3fe9f55712bf69eb997f4bf"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/layout/activity_main.xml",
+    "public_path": "android/android/app/src/main/res/layout/activity_main.xml",
+    "sha256": "5d770feb791313b947020cbfc57e5c733c556dac5e9e49261a1190e527073253"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/drawable-port-mdpi/splash.png",
+    "public_path": "android/android/app/src/main/res/drawable-port-mdpi/splash.png",
+    "sha256": "07fa579e1c83e04ba7f9cbcbfcf41b68e15fe3638f2c44a04e58b809103e6b69"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/drawable/ic_launcher_background.xml",
+    "public_path": "android/android/app/src/main/res/drawable/ic_launcher_background.xml",
+    "sha256": "718ba51adf166bb55c3e9936bb8199a0148457f7f0191aaa2f37a94f3159d6ec"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/drawable/splash.png",
+    "public_path": "android/android/app/src/main/res/drawable/splash.png",
+    "sha256": "5cf98b4451bd99b20df26f9e608a46946118be6b0ae90762f9ca1786a30c76ff"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/drawable-land-hdpi/splash.png",
+    "public_path": "android/android/app/src/main/res/drawable-land-hdpi/splash.png",
+    "sha256": "08cc34ad7713fe7ed58bceaa37b2387b670c53cd60264b4bd6442db3098e75dc"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png",
+    "public_path": "android/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png",
+    "sha256": "fece89c2940452677bc6cbbfc521a8096a4a8f7ad0786f4a1adf014b727bf910"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+    "public_path": "android/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+    "sha256": "ed2671513e2a6d2597e24abbec6b9113e1cf820e0735e8ac3ece1a308250c5df"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png",
+    "public_path": "android/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png",
+    "sha256": "b692989062dd8b7166455519c3bcf77a33dde18acccdc0a2801c7bef54742348"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/values-v35/styles.xml",
+    "public_path": "android/android/app/src/main/res/values-v35/styles.xml",
+    "sha256": "17b5e8f1ebb076fee5ae1632070b1c026519774ac94dd4795d97e2e023f100e2"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/drawable-port-xxxhdpi/splash.png",
+    "public_path": "android/android/app/src/main/res/drawable-port-xxxhdpi/splash.png",
+    "sha256": "3db071a03b2f8ffe0dfd4170fc59842d53cd15bba5e88af59401d58efabf7827"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/drawable-port-xxhdpi/splash.png",
+    "public_path": "android/android/app/src/main/res/drawable-port-xxhdpi/splash.png",
+    "sha256": "0c7f1212f25b7b90e9a6e1d320013e4ff3d3e03e634cbb07b7b7981cac51627f"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
+    "public_path": "android/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
+    "sha256": "3f8d5b4e60286bf145e75052de2eee3bba9937c0d1ed00c69d05a22511e9afcb"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+    "public_path": "android/android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+    "sha256": "2fb4c9c044e62ab540c7e7cde3864fbc650dff3fce3786e8930e1f1fe8e4e3e5"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png",
+    "public_path": "android/android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png",
+    "sha256": "d480e9657084fb5faba4d36bfb886a366771bf35bf2627b5d146afd5708efe71"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/drawable-port-xhdpi/splash.png",
+    "public_path": "android/android/app/src/main/res/drawable-port-xhdpi/splash.png",
+    "sha256": "b73049cb37fe76d6c11b87a796766bf6af0c85483b31eb6a921657b0d764a4b9"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/xml/config.xml",
+    "public_path": null,
+    "sha256": "e9dcda493e663c5c4db9e3cb3bd968477a6e90aa8840bcbba40d72ed54b767ce",
+    "reason": "Capacitor-generated configuration; reproducibly regenerated by cap sync; original retained in workspace"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/xml/data_extraction_rules.xml",
+    "public_path": "android/android/app/src/main/res/xml/data_extraction_rules.xml",
+    "sha256": "eda9dddce1e895de1efd716fe75e244187bf8f91a3bb7444c6ea1731e51c74a8"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/xml/backup_rules.xml",
+    "public_path": "android/android/app/src/main/res/xml/backup_rules.xml",
+    "sha256": "d1e231640a2e07dfa95a4032261dec03357439a3d6615c5e7a686dcaeec691e6"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/xml/file_paths.xml",
+    "public_path": "android/android/app/src/main/res/xml/file_paths.xml",
+    "sha256": "a46ed43ef65c90cb6778f4581decf3556e3f0055aad8f36d69dae16f9a0e99aa"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/values/ic_launcher_background.xml",
+    "public_path": "android/android/app/src/main/res/values/ic_launcher_background.xml",
+    "sha256": "d24846ea2daaa6e2a786742feae34cbce9ef54f07fdaed746ed46c8ab1295547"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/values/styles.xml",
+    "public_path": "android/android/app/src/main/res/values/styles.xml",
+    "sha256": "a63d244239f03f171da956f1b392d4bd49a97c526e260627c6586b2872b76a0b"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/values/strings.xml",
+    "public_path": "android/android/app/src/main/res/values/strings.xml",
+    "sha256": "cc6695b22de48da1f3d9e73f15808353ecd78f1399d935f9a0dfac7f480b6d3c"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml",
+    "public_path": "android/android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml",
+    "sha256": "a8514094f754b099d3e55ce1d6e0b2de79db418b2eeacb0fc2a6bb0bfadef221"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png",
+    "public_path": "android/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png",
+    "sha256": "aa2a1e25b89d388215ed8db0f7048eb6b8bb7f34042041bab627abd38cb411a2"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+    "public_path": "android/android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+    "sha256": "0f2bfeb5954b0d849101f53e6ae8bdaabbcb9c1869a0569406531a1a8ff5906a"
+  },
+  {
+    "source": "android-app/android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png",
+    "public_path": "android/android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png",
+    "sha256": "2d81d2e74e62cb767a813f527073df9e170b555df638ccab6bb25913de08b228"
+  },
+  {
+    "source": "android-app/android/app/src/main/java/com/nemesis/panel/dev/SecureSessionPlugin.java",
+    "public_path": "android/android/app/src/main/java/com/nemesis/panel/dev/SecureSessionPlugin.java",
+    "sha256": "82251a05652c8b34f7869fe7b019a185b46afed791972b1a4ff51021ae2b84f1"
+  },
+  {
+    "source": "android-app/android/app/src/main/java/com/nemesis/panel/dev/MainActivity.java",
+    "public_path": "android/android/app/src/main/java/com/nemesis/panel/dev/MainActivity.java",
+    "sha256": "a16a46f7bf88a81e4947b112394f12ba9ca40b309a52a202dd3848f2828bf36d"
+  },
+  {
+    "source": "android-app/android/app/src/main/java/com/nemesis/panel/dev/KeystoreSessionStore.java",
+    "public_path": "android/android/app/src/main/java/com/nemesis/panel/dev/KeystoreSessionStore.java",
+    "sha256": "3920fd017453549b8d8d9429583e3db0c69143c0d1bb7082aaab33db92eac6ad"
+  },
+  {
+    "source": "android-app/android/gradle/wrapper/gradle-wrapper.properties",
+    "public_path": "android/android/gradle/wrapper/gradle-wrapper.properties",
+    "sha256": "df76e7afe655db04867bd53800919e1f1bd9595858ef17051d1ab7c3376a7077"
+  },
+  {
+    "source": "android-app/android/gradle/wrapper/gradle-wrapper.jar",
+    "public_path": "android/android/gradle/wrapper/gradle-wrapper.jar",
+    "sha256": "2db75c40782f5e8ba1fc278a5574bab070adccb2d21ca5a6e5ed840888448046"
+  },
+  {
+    "source": "android-app/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml",
+    "public_path": null,
+    "sha256": "2e3e383475f0e6cb76f0a7b46017a546663fba8e5bd1ef2a537412afac2ee9b5",
+    "reason": "Capacitor-generated configuration; reproducibly regenerated by cap sync; original retained in workspace"
+  },
+  {
+    "source": "android-app/android/capacitor-cordova-android-plugins/src/main/res/.gitkeep",
+    "public_path": null,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "reason": "Capacitor-generated configuration; reproducibly regenerated by cap sync; original retained in workspace"
+  },
+  {
+    "source": "android-app/android/capacitor-cordova-android-plugins/src/main/java/.gitkeep",
+    "public_path": null,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reason": "Capacitor-generated configuration; reproducibly regenerated by cap sync; original retained in workspace"
+  },
+  {
+    "source": "android-app/src/generated/provenance.json",
+    "public_path": "android/src/generated/provenance.json",
+    "sha256": "841064c784365ae4dc3df0b4c7f86c9c6dfe8060fbbe9ab87d891d142a08c417"
+  },
+  {
+    "source": "android-app/src/generated/icons.js",
+    "public_path": "android/src/generated/icons.js",
+    "sha256": "be1fd9df79f471dfe5abe9dc4bcba3df6a6ce5b1058a2a7095954cbcda947f4c"
+  },
+  {
+    "source": "android-app/src/generated/OriginalUI.jsx",
+    "public_path": "android/src/generated/OriginalUI.jsx",
+    "sha256": "f12dde2cd37fa04ecca60a443f9f1e71d89288a1bfc6669e9885b14f21a82f80"
+  },
+  {
+    "source": "android-app/src/generated/original.css",
+    "public_path": "android/src/generated/original.css",
+    "sha256": "1d7f2f9fe6709578e120e5145ed56db11c1905d679066d84992e686ac43cfecd"
+  },
+  {
+    "source": "android-app/src/branding/BrandLogo.jsx",
+    "public_path": "android/src/branding/BrandLogo.jsx",
+    "sha256": "d748f4c6fddd5c6a1aeb96312c19febe8ea89464c59e6329c09a0ff527bc6969"
+  },
+  {
+    "source": "android-app/src/branding/branding.json",
+    "public_path": "android/src/branding/branding.json",
+    "sha256": "fffe374728520084327444cab3cc97c0b9a59915c1c327e517273b8bbbb00e4a"
+  },
+  {
+    "source": "android-app/src/auth/vault-queue.mjs",
+    "public_path": "android/src/auth/vault-queue.mjs",
+    "sha256": "3090fd19cb1d27ae6d2bc93746a173978866c69e0c02eefdb9e4e47759e45f78"
+  },
+  {
+    "source": "android-app/src/auth/api-auth.mjs",
+    "public_path": "android/src/auth/api-auth.mjs",
+    "sha256": "893b7fb599c0390bb4aaf9dff4d73e1e57f0d3c97ed2180737101d146dc397d1"
+  },
+  {
+    "source": "android-app/src/auth/capacitor-transport.mjs",
+    "public_path": "android/src/auth/capacitor-transport.mjs",
+    "sha256": "8f2f8a08e79da5ae7dac40e2354fd349f006449603d607f241c0b6d14f87bd3f"
+  },
+  {
+    "source": "android-app/src/auth/mock-auth.mjs",
+    "public_path": null,
+    "reason": "historical mock credentials retained privately; unused by current app/tests",
+    "sha256": "01ae6b223665107639b754ca83587aa84ab246b827c39752c832ef1bd6a10973"
+  },
+  {
+    "source": "android-app/src/auth/api-contract.mjs",
+    "public_path": "android/src/auth/api-contract.mjs",
+    "sha256": "14b36f9426ae32e91b1a1f882105ce52f0f6024829ab2ec3413c7488ce6b395a"
+  },
+  {
+    "source": "android-app/src/auth/https-transport.mjs",
+    "public_path": "android/src/auth/https-transport.mjs",
+    "sha256": "505ead3f246dccf0ff2c7ba23d6534e366e9f1752c9994e057d704a8c719ed2f"
+  },
+  {
+    "source": "android-app/src/auth/secure-session.mjs",
+    "public_path": "android/src/auth/secure-session.mjs",
+    "sha256": "82d00e352170819413b1fdd7cae56ba6feafb7917bf1c09dafb9996599139966"
+  },
+  {
+    "source": "android-app/src/components/Settings.jsx",
+    "public_path": "android/src/components/Settings.jsx",
+    "sha256": "de06f62eeba328d17df650eb58b17f416096f65a2adf71197def26e542505445"
+  },
+  {
+    "source": "android-app/src/components/Pages.jsx",
+    "public_path": "android/src/components/Pages.jsx",
+    "sha256": "24b86febe0e47c67488dc5ea6e175c19bbcb6b3db230e5b2b8251ac31b0877fb"
+  },
+  {
+    "source": "android-app/src/components/Icon.jsx",
+    "public_path": "android/src/components/Icon.jsx",
+    "sha256": "94f54904ec8c35242e51a6e762f1cf47e31977fcc06209b23146fa837b5d70c7"
+  },
+  {
+    "source": "android-app/src/components/Auth.jsx",
+    "public_path": "android/src/components/Auth.jsx",
+    "sha256": "d02991f9055545a5f0b8e0a3db151583e6b072eb03702722c73540b819321ff8"
+  },
+  {
+    "source": "android-app/tests/fixtures/phase1-browser.mjs",
+    "public_path": null,
+    "reason": "historical mock credentials retained privately; unused by current app/tests",
+    "sha256": "9bfc02da52b80390d648cbd44c8fece57c15cbe0116ea26691a9cf95b6a111b8"
+  },
+  {
+    "source": "android-app/tests/fixtures/legacy-mock-auth.mjs",
+    "public_path": null,
+    "reason": "historical mock credentials retained privately; unused by current app/tests",
+    "sha256": "01ae6b223665107639b754ca83587aa84ab246b827c39752c832ef1bd6a10973"
+  },
+  {
+    "source": "android-app/tests/fixtures/phase1-auth.test.mjs",
+    "public_path": null,
+    "reason": "historical mock credentials retained privately; unused by current app/tests",
+    "sha256": "c9feaf0e1c4dc1a28c72939d4d19aa405226fb59640ffe9399a61ad00b2d45bd"
+  },
+  {
+    "source": "android-app/tests/fixtures/schema.mjs",
+    "public_path": "android/tests/fixtures/schema.mjs",
+    "sha256": "0daa00805d69485a8d1d9e4865e427532f291ba4e53d1eb790b53cb2db0994e8"
+  },
+  {
+    "source": "backend-export/backend/auth_api.py",
+    "public_path": "backend/auth_api.py",
+    "sha256": "6cabe5ad6729bb5d8dc93519a2c3b99ea8cc40134a0b15bef2ae89241d44fdd4"
+  },
+  {
+    "source": "backend-export/backend/registration_api.py",
+    "public_path": "backend/registration_api.py",
+    "sha256": "cfebc09aafc167b5de01267e4fb2ff0896e869f32fce7547fbb0f775bb6329d4"
+  },
+  {
+    "source": "backend-export/backend/firebase_pool.py",
+    "public_path": "backend/firebase_pool.py",
+    "sha256": "278cb7baed5479f8bf6b0ce5fc285af69c2c93b6dc0522ef3520bfe588d5e501"
+  },
+  {
+    "source": "backend-export/backend/telegram_bot.py",
+    "public_path": "backend/telegram_bot.py",
+    "sha256": "92e399fa043b2fed116ec739f3ca3120c892b85c27fddd33f9db11a2d65786a4"
+  },
+  {
+    "source": "backend-export/backend/registration_store.py",
+    "public_path": "backend/registration_store.py",
+    "sha256": "4402fa46de99d6bf48e3fc5316e5b4516640c705e825ca309c1e2b5621003bc7"
+  },
+  {
+    "source": "backend-export/backend/account_store.py",
+    "public_path": "backend/account_store.py",
+    "sha256": "b6c9a2116667451c3e496d5f23817a9a8e37c61f91b8e52ac07bd46502b538c2"
+  },
+  {
+    "source": "backend-export/backend/firebase_api.py",
+    "public_path": "backend/firebase_api.py",
+    "sha256": "9e499720cf5dfbb263a07c892b4a96c47be8591f2fa768dfab430981d25328e7"
+  },
+  {
+    "source": "backend-export/backend/firebase_cli.py",
+    "public_path": "backend/firebase_cli.py",
+    "sha256": "79c8cd23881cb3882679cc26acf8ddc799c7576afb8e0c2aa752e6278ad3b53a"
+  },
+  {
+    "source": "backend-export/backend/main.py",
+    "public_path": "backend/main.py",
+    "sha256": "d69c8934b00cb01be45ee860af0a8b7c62dc57fd2a42bb6e7e51e17acfe0907b"
+  },
+  {
+    "source": "backend-export/backend/telegram_link.py",
+    "public_path": "backend/telegram_link.py",
+    "sha256": "2bbb32a13dd8cbca8bec36e69791f9a38bf4331f54decff24cd434cad39181fd"
+  },
+  {
+    "source": "checkpoints/00-phase1-baseline.zip!android-app/src/mobile.css",
+    "public_path": "legacy/preserved-features/phase1-ui/src/mobile.css",
+    "sha256": "89f2e64813c1aae5d76c7cc0607da2a2769b43b83e8525ca6c868bedd8aed910"
+  },
+  {
+    "source": "checkpoints/00-phase1-baseline.zip!android-app/src/generated/provenance.json",
+    "public_path": "legacy/preserved-features/phase1-ui/src/generated/provenance.json",
+    "sha256": "841064c784365ae4dc3df0b4c7f86c9c6dfe8060fbbe9ab87d891d142a08c417"
+  },
+  {
+    "source": "checkpoints/00-phase1-baseline.zip!android-app/src/generated/icons.js",
+    "public_path": "legacy/preserved-features/phase1-ui/src/generated/icons.js",
+    "sha256": "be1fd9df79f471dfe5abe9dc4bcba3df6a6ce5b1058a2a7095954cbcda947f4c"
+  },
+  {
+    "source": "checkpoints/00-phase1-baseline.zip!android-app/src/generated/OriginalUI.jsx",
+    "public_path": "legacy/preserved-features/phase1-ui/src/generated/OriginalUI.jsx",
+    "sha256": "f12dde2cd37fa04ecca60a443f9f1e71d89288a1bfc6669e9885b14f21a82f80"
+  },
+  {
+    "source": "checkpoints/00-phase1-baseline.zip!android-app/src/generated/original.css",
+    "public_path": "legacy/preserved-features/phase1-ui/src/generated/original.css",
+    "sha256": "1d7f2f9fe6709578e120e5145ed56db11c1905d679066d84992e686ac43cfecd"
+  }
+]

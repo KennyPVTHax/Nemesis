@@ -1,0 +1,274 @@
+[
+  {
+    "name": "Password login",
+    "source": "backend/auth_api.py",
+    "status": "ACTIVE",
+    "verification": "Argon2id; owner-reported live; isolated tests",
+    "dependencies": "Production account/Telegram",
+    "activation": "None"
+  },
+  {
+    "name": "Telegram six-digit OTP delivery",
+    "source": "backend/auth_api.py",
+    "status": "ACTIVE",
+    "verification": "Source reviewed; owner-reported live; network not invoked",
+    "dependencies": "Server bot token",
+    "activation": "None"
+  },
+  {
+    "name": "OTP three-attempt enforcement",
+    "source": "backend/auth_api.py",
+    "status": "PARTIAL",
+    "verification": "Strict expected-failure regression confirms rollback",
+    "dependencies": "Approved transaction fix",
+    "activation": "Fix failed-attempt commit behavior in separate reviewed patch"
+  },
+  {
+    "name": "OTP expiry and single use",
+    "source": "backend/auth_api.py",
+    "status": "ACTIVE",
+    "verification": "Single-use test passed; expiry source reviewed",
+    "dependencies": "Server clock",
+    "activation": "None"
+  },
+  {
+    "name": "Bearer sessions and logout",
+    "source": "backend/auth_api.py",
+    "status": "ACTIVE",
+    "verification": "Isolated verify/profile/logout passed",
+    "dependencies": "Production DB excluded",
+    "activation": "None"
+  },
+  {
+    "name": "Owner creation and Argon2id storage",
+    "source": "backend/account_store.py",
+    "status": "ACTIVE",
+    "verification": "Temporary DB/hash tests passed",
+    "dependencies": "Operator initialization",
+    "activation": "None"
+  },
+  {
+    "name": "Owner Telegram linking",
+    "source": "backend/telegram_link.py",
+    "status": "LEGACY",
+    "verification": "Source retained; linking runtime not tested",
+    "dependencies": "Owner setup/private Telegram",
+    "activation": "Review before a new deployment"
+  },
+  {
+    "name": "Telegram private-chat command guard",
+    "source": "backend/telegram_bot.py",
+    "status": "LEGACY",
+    "verification": "Source reviewed, no poller started",
+    "dependencies": "Bot token and verified sender",
+    "activation": "Review runtime permissions"
+  },
+  {
+    "name": "Bot polling offset and delivery errors",
+    "source": "backend/telegram_bot.py",
+    "status": "LEGACY",
+    "verification": "Source retained; no live test",
+    "dependencies": "Private offset file",
+    "activation": "Review before running poller"
+  },
+  {
+    "name": "Customer keys and redemption",
+    "source": "backend/registration_store.py",
+    "status": "ACTIVE",
+    "verification": "Isolated registration passed",
+    "dependencies": "Existing owner",
+    "activation": "None"
+  },
+  {
+    "name": "Login ID reservation",
+    "source": "backend/registration_store.py",
+    "status": "ACTIVE",
+    "verification": "Isolated setid passed",
+    "dependencies": "Redeemed key",
+    "activation": "None"
+  },
+  {
+    "name": "Private setup and password activation",
+    "source": "backend/registration_api.py",
+    "status": "ACTIVE",
+    "verification": "Isolated activation/single-use passed",
+    "dependencies": "Private signup link",
+    "activation": "None"
+  },
+  {
+    "name": "Customer renewal",
+    "source": "backend/registration_store.py",
+    "status": "LEGACY",
+    "verification": "Source reviewed; renewal not exercised",
+    "dependencies": "Valid one-use key",
+    "activation": "Add renewal/concurrency tests"
+  },
+  {
+    "name": "Account status and registration cancel",
+    "source": "backend/telegram_bot.py",
+    "status": "LEGACY",
+    "verification": "Source retained, no Telegram invocation",
+    "dependencies": "Telegram identity",
+    "activation": "Add bot command tests; stale help needs proposal"
+  },
+  {
+    "name": "Account eligibility and expiry",
+    "source": "backend/auth_api.py",
+    "status": "ACTIVE",
+    "verification": "Owner-null/customer-expired tests passed",
+    "dependencies": "DB state",
+    "activation": "None"
+  },
+  {
+    "name": "Firebase inventory CLI",
+    "source": "backend/firebase_cli.py",
+    "status": "LEGACY",
+    "verification": "Source retained; operator actions not run",
+    "dependencies": "Private service-account files and OS permissions",
+    "activation": "Operator/security review before use"
+  },
+  {
+    "name": "Per-customer Firebase allocation",
+    "source": "backend/firebase_pool.py",
+    "status": "ACTIVE",
+    "verification": "Isolated two-customer allocation test passed",
+    "dependencies": "Inventory entries",
+    "activation": "No live Firebase connectivity claimed"
+  },
+  {
+    "name": "Firebase link request and owner approval",
+    "source": "backend/firebase_api.py",
+    "status": "ACTIVE",
+    "verification": "Isolated approval/isolation passed",
+    "dependencies": "Owner approval",
+    "activation": "Independent Firebase Rules review still required"
+  },
+  {
+    "name": "Firebase Rules and live project isolation",
+    "source": "backend/firebase_pool.py",
+    "status": "PARTIAL",
+    "verification": "Only allocation exists; Rules not supplied",
+    "dependencies": "Isolated Firebase project and Rules source",
+    "activation": "Run actual Firebase authorization tests"
+  },
+  {
+    "name": "Android login/OTP API adapter",
+    "source": "android/src/auth/api-auth.mjs",
+    "status": "ACTIVE",
+    "verification": "JS/browser tests; owner reports device login working",
+    "dependencies": "Existing HTTPS API",
+    "activation": "None"
+  },
+  {
+    "name": "Encrypted saved Android sessions",
+    "source": "android/android/app/src/main/java/com/nemesis/panel/dev/KeystoreSessionStore.java",
+    "status": "ACTIVE",
+    "verification": "JS persistence tests; native device execution not run",
+    "dependencies": "Android Keystore",
+    "activation": "Native test remains"
+  },
+  {
+    "name": "Four primary tabs and Back",
+    "source": "android/src/App.jsx",
+    "status": "ACTIVE",
+    "verification": "Browser navigation passed",
+    "dependencies": "Android runtime for physical Back",
+    "activation": "Physical verification remains"
+  },
+  {
+    "name": "Keyboard single-owner resizing",
+    "source": "android/android/app/src/main/java/com/nemesis/panel/dev/MainActivity.java",
+    "status": "ACTIVE",
+    "verification": "Source/short-viewport regressions passed",
+    "dependencies": "Gboard/device",
+    "activation": "Physical IME check remains"
+  },
+  {
+    "name": "Approved branding and themes",
+    "source": "android/src/branding/BrandLogo.jsx",
+    "status": "ACTIVE",
+    "verification": "Asset dimensions and theme tests passed",
+    "dependencies": "OS launcher for masking review",
+    "activation": "None"
+  },
+  {
+    "name": "Account profile/settings/logout",
+    "source": "android/src/components/Settings.jsx",
+    "status": "ACTIVE",
+    "verification": "Authenticated profile and logout tests passed",
+    "dependencies": "HTTPS API",
+    "activation": "None"
+  },
+  {
+    "name": "Password change/history/session-list/link settings",
+    "source": "android/src/components/Settings.jsx",
+    "status": "PARTIAL",
+    "verification": "UI retained; endpoints absent from export",
+    "dependencies": "Additional reviewed APIs",
+    "activation": "Implement separate approved integration"
+  },
+  {
+    "name": "Original monitoring dashboard controls",
+    "source": "android/src/generated/OriginalUI.jsx",
+    "status": "INACTIVE",
+    "verification": "Original extracted JSX/CSS hash preserved; SMS search modal tested",
+    "dependencies": "Authorized device-data adapter",
+    "activation": "Remain disconnected; no collection or remote commands"
+  },
+  {
+    "name": "APK/Firebase Android interface",
+    "source": "android/src/generated/OriginalUI.jsx",
+    "status": "INACTIVE",
+    "verification": "Original extracted UI retained; no backend mapping",
+    "dependencies": "Reviewed client Firebase API integration",
+    "activation": "Do not connect automatically"
+  },
+  {
+    "name": "Reserved third tab",
+    "source": "android/src/components/Pages.jsx",
+    "status": "ACTIVE",
+    "verification": "Browser tab check passed",
+    "dependencies": "Owner future specification",
+    "activation": "Reserved by design"
+  },
+  {
+    "name": "Earlier extracted website UI",
+    "source": "legacy/preserved-features/phase1-ui/src/generated/OriginalUI.jsx",
+    "status": "LEGACY",
+    "verification": "Real checkpoint source retained",
+    "dependencies": "Full independent website missing",
+    "activation": "Compare original website if recovered"
+  },
+  {
+    "name": "Historical mock authentication",
+    "source": "private workspace checkpoint",
+    "status": "LEGACY",
+    "verification": "Private original retained; excluded from public import",
+    "dependencies": "Private checkpoint",
+    "activation": "Never a production fallback"
+  },
+  {
+    "name": "Independent original website project",
+    "source": "Unavailable",
+    "status": "PENDING",
+    "verification": "Not recovered; only extracted UI available",
+    "dependencies": "Original five attachments/full website",
+    "activation": "Locate original and conduct private security review"
+  },
+  {
+    "name": "Child-device Android source",
+    "source": "Unavailable",
+    "status": "PENDING",
+    "verification": "No actual child app source located",
+    "dependencies": "Original child project",
+    "activation": "Do not reconstruct or claim preserved"
+  },
+  {
+    "name": "Future child APK builder/packer",
+    "source": "Unavailable",
+    "status": "PENDING",
+    "verification": "Planned reserve only; no original implementation found",
+    "dependencies": "Owner specification and source",
+    "activation": "Outside import activation scope"
+  }
+]
