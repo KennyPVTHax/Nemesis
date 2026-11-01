@@ -76,3 +76,5 @@ Thumbs.db
 **/dist/
 /artifacts/
 **/__pycache__/
+# Also ignore a local dependency symlink (not only directories).
+**/node_modules
