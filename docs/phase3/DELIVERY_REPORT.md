@@ -19,7 +19,7 @@ No Google credentials or real project/billing settings were supplied, so **live 
 
 Architecture is backend-mediated with direct client denial. The customer receives only their approved database URL; it confers no read/write permission. The narrow optional preferences gateway derives the database from the authenticated account, rechecks isolation, and accepts only fixed theme/locale fields. It is off by default; no device collection or monitoring integration is activated. Authorized devices use separate existing password/Telegram OTP sessions for their account; no per-device collector/enrollment feature is invented. The full independent original website and child application are still unavailable and are not claimed recovered.
 
-Tests: Python 89 passed; Android JS 51 passed/1 existing skip; browser 12 passed; real local Rules denial 6 passed; frontend/sync and native application build/unit/lint passed (0 lint errors/16 warnings). Read TEST_RESULTS.md for scope, warnings and unavailable live/device checks. Source/secret review found no actual credentials; only the existing three provenance-digest scanner false positives remain, without suppression.
+Tests: Python 89 passed; Android JS 51 passed/1 existing skip; browser 12 passed; real local Rules denial 6 passed plus 3 authentication controls; frontend/sync and native application build/unit/lint passed (0 lint errors/16 warnings). Read TEST_RESULTS.md for scope, warnings and unavailable live/device checks. Source/secret review found no actual credentials; only the existing three provenance-digest scanner false positives remain, without suppression.
 
 ## Deployment handoff
 
