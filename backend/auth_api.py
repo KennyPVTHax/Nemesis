@@ -76,18 +76,25 @@ def login(body:Login,request:Request):
 
 @router.post('/verify')
 def verify(body:Verify):
-    now=int(time.time());key=digest(body.challenge_id)
+    key=digest(body.challenge_id);token=None
     with connect() as db:
         db.execute('BEGIN IMMEDIATE')
+        # Check time after obtaining the writer lock, including any lock wait.
+        now=int(time.time())
         row=db.execute('SELECT user_id,code_hash,expires_at,attempts FROM auth_challenges WHERE id_hash=?',(key,)).fetchone()
-        if not row or row[2]<=now or row[3]>=3:deny()
-        db.execute('UPDATE auth_challenges SET attempts=attempts+1 WHERE id_hash=?',(key,))
-        if not hmac.compare_digest(row[1],digest(body.challenge_id+':'+body.code)):deny()
-        user=db.execute('SELECT id,login_id,telegram_chat_id,role,is_active,expires_at FROM users WHERE id=?',(row[0],)).fetchone()
-        if not eligible(user):deny()
-        db.execute('DELETE FROM auth_challenges WHERE id_hash=?',(key,))
-        token=secrets.token_urlsafe(32)
-        db.execute('INSERT INTO auth_sessions VALUES(?,?,?)',(digest(token),row[0],min(now+28800,user[5]) if user[3]!='owner' else now+28800))
+        if row and row[2]>now and row[3]<3:
+            if not hmac.compare_digest(row[1],digest(body.challenge_id+':'+body.code)):
+                db.execute('UPDATE auth_challenges SET attempts=attempts+1 WHERE id_hash=?',(key,))
+            else:
+                user=db.execute('SELECT id,login_id,telegram_chat_id,role,is_active,expires_at FROM users WHERE id=?',(row[0],)).fetchone()
+                if eligible(user):
+                    # Consumption and session creation share the same serialized transaction.
+                    db.execute('DELETE FROM auth_challenges WHERE id_hash=?',(key,))
+                    token=secrets.token_urlsafe(32)
+                    db.execute('INSERT INTO auth_sessions VALUES(?,?,?)',(digest(token),row[0],min(now+28800,user[5]) if user[3]!='owner' else now+28800))
+    # Raising within the connection context would roll back failed-attempt increments.
+    # Commit must finish successfully before returning either success or an auth error.
+    if token is None:deny()
     return {'access_token':token,'token_type':'bearer','expires_in':28800}
 
 @router.get('/me')

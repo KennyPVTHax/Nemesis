@@ -36,7 +36,6 @@ def test_customer_session_bounded_by_subscription(db):
     with account_store.connect() as c:c.execute('UPDATE users SET expires_at=? WHERE id=2',(db-1,))
     with pytest.raises(HTTPException):auth_api.get_user(token)
 
-@pytest.mark.xfail(strict=True,reason='Preserved source rolls back failed-OTP attempt increments on HTTPException; approval-required fix')
 def test_three_wrong_attempts_are_persisted(db):
     key,code=challenge(db);wrong=f'{(int(code)+1)%1000000:06d}'
     for _ in range(3):
@@ -65,7 +64,12 @@ def test_source_syntax_and_checksum():
     import ast,hashlib
     root=Path(__file__).resolve().parents[1]
     for line in (root/'docs/BACKEND_EXPORT_SHA256SUMS.txt').read_text().splitlines():
-        digest,name=line.split(maxsplit=1);p=root/name.lstrip('*');assert hashlib.sha256(p.read_bytes()).hexdigest()==digest;ast.parse(p.read_text())
+        digest,name=line.split(maxsplit=1)
+        name=name.lstrip('*')
+        p=root/('legacy/backend-baseline/auth_api.py' if name=='backend/auth_api.py' else name)
+        assert hashlib.sha256(p.read_bytes()).hexdigest()==digest;ast.parse(p.read_text())
+    patch=__import__('json').loads((root/'docs/security/OTP_SOURCE_CHECKSUMS.json').read_text())
+    assert hashlib.sha256((root/'backend/auth_api.py').read_bytes()).hexdigest()==patch['patched_sha256']
 
 def test_http_profile_and_firebase_authorization(db):
     from fastapi.testclient import TestClient

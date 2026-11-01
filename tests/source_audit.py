@@ -12,8 +12,14 @@ for name in filter(None,files):
     content=subprocess.check_output(['git','show',':'+name],cwd=root)
     assert not any(re.search(pattern,content) for pattern in patterns),'Potential secret in '+name
 manifest=json.loads((root/'docs/IMPORT_MANIFEST.json').read_text())
+patch=json.loads((root/'docs/security/OTP_SOURCE_CHECKSUMS.json').read_text())
 for row in manifest:
     if row['public_path']:
         assert row['public_path'] in files,row['public_path']
-        assert hashlib.sha256((root/row['public_path']).read_bytes()).hexdigest()==row['sha256'],row['public_path']
+        original=root/row['public_path']
+        if row['public_path']=='backend/auth_api.py':
+            original=root/patch['preserved_baseline_path']
+            assert patch['original_sha256']==row['sha256']
+            assert hashlib.sha256((root/row['public_path']).read_bytes()).hexdigest()==patch['patched_sha256']
+        assert hashlib.sha256(original.read_bytes()).hexdigest()==row['sha256'],row['public_path']
 print(json.dumps({'indexed_files':len([x for x in files if x]),'verified_imported_source_files':sum(bool(x['public_path']) for x in manifest),'high_confidence_secret_findings':0}))
