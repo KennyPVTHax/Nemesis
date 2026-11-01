@@ -13,6 +13,8 @@ def status(response:Response,user=Depends(current_user)):
 def request(response:Response,user=Depends(current_user)):
     response.headers['Cache-Control']='no-store'
     if user[3]!='user':raise HTTPException(403,'Customer account required')
+    from auth_api import throttle
+    throttle('firebase-link:'+str(user[0]),10,900)
     state=request_link(user[0])
     if state=='not_eligible':raise HTTPException(403,'Customer subscription inactive')
     return {'status':state}
@@ -26,3 +28,9 @@ def approved(response:Response,user=Depends(current_user)):
     # Reveals only approved database URL, NEVER admin credentials.
     # Firebase Rules must enforce access independently of this API.
     return {'database_url':url}
+
+@router.get('/capabilities')
+def capabilities(response:Response,user=Depends(current_user)):
+    import firebase_config as cfg
+    response.headers['Cache-Control']='no-store'
+    return {'enabled':cfg.enabled(),'security_version':1,'architecture':'backend-mediated'}

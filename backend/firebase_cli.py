@@ -33,7 +33,9 @@ def run():
         if data.get('type')!='service_account' or not data.get('project_id') or not data.get('client_email') or not data.get('private_key'):p.error('Invalid Firebase service account JSON')
         with connect() as db:
             db.execute('INSERT INTO firebase_instances(label,database_url,credential_path,added_at) VALUES(?,?,?,?)',(args.label,url,str(f),int(time.time())))
-        print('Instance added:',args.label,'(not yet connectivity verified)')
+        from firebase_migration import migrate
+        migrate()
+        print('Instance added:',args.label,'(requires /firebase_test LABEL ALIAS before allocation)')
     elif args.cmd=='list':
         with connect() as db:
             rows=db.execute('''SELECT f.label,f.active,u.login_id FROM firebase_instances f LEFT JOIN users u ON u.id=f.assigned_user_id ORDER BY f.id''').fetchall()
@@ -64,6 +66,11 @@ def run():
             row=db.execute('SELECT state FROM firebase_link_requests WHERE user_id=?',(customer[0],)).fetchone()
             if not row or row[0]!='pending':raise SystemExit('No pending customer link request')
             if state=='approved':
+                from firebase_manager_store import verified
+                from firebase_pool import eligible
+                if not eligible(db,customer[0]):raise SystemExit('Eligible customer required')
+                assigned=db.execute('SELECT id FROM firebase_instances WHERE assigned_user_id=?',(customer[0],)).fetchone()
+                if not assigned or not verified(db,assigned[0]):raise SystemExit('Verified assignment required')
                 if not db.execute('SELECT 1 FROM firebase_instances WHERE assigned_user_id=? AND active=1',(customer[0],)).fetchone():raise SystemExit('No active assigned database')
             db.execute('UPDATE firebase_link_requests SET state=?,reviewed_at=?,reviewed_by=? WHERE user_id=?',(state,int(time.time()),actor[0],customer[0]))
             db.execute('INSERT INTO firebase_audit(user_id,action,actor_id,created_at) VALUES(?,?,?,?)',(customer[0],'link_'+state,actor[0],int(time.time())))

@@ -1,3 +1,5 @@
+Current Phase 3 extension: [Telegram Firebase Manager status](phase3/FEATURE_STATUS.md). The original inventory below is retained as historical source-preservation evidence.
+
 # Source-based feature inventory
 
 34 features identified from actual source and explicitly missing requirements. See [FEATURE_STATUS.md](FEATURE_STATUS.md) for verification, activation boundaries and dependencies; machine-readable rows are in FEATURES.json. Original provisional inventory is retained in prior-review/.

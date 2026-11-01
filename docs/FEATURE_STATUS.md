@@ -1,3 +1,5 @@
+Current Phase 3 extension: [Telegram Firebase Manager status](phase3/FEATURE_STATUS.md). The original inventory below is retained as historical source-preservation evidence.
+
 # Verified feature status
 
 Statuses describe imported source/local verification, with owner-reported deployment distinguished from tests executed here. ACTIVE does not claim every device/live-service test ran. No feature was activated by importing it.

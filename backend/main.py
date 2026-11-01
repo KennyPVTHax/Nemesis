@@ -27,4 +27,5 @@ app.include_router(registration_router)
 from firebase_pool import init as init_firebase_pool
 from firebase_api import router as firebase_router
 init_firebase_pool()
+import firebase_gateway
 app.include_router(firebase_router)

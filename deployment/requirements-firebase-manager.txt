@@ -1,0 +1,3 @@
+# Additive SDK dependencies only; existing FastAPI/auth dependencies are not replaced.
+google-auth==2.62.0
+requests==2.34.2

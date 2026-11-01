@@ -23,12 +23,12 @@ export class ApiAuthAdapter{
  session(){return this.#session}
  #clear(){this.#token=null;this.#session=null;this.#challenge=null;this.#expiresAt=null}
  async #eraseSaved(){if(this.#vault)try{await this.#vault.clear()}catch{throw new AuthError('secure_storage','Unable to remove the saved session. Close the app and clear its storage before signing in again.')}}
- async #request(path,body,{token=null,signal,method=body===undefined?'GET':'POST'}={}){
+ async #request(path,body,{token=null,signal,method=body===undefined?'GET':'POST',invalidateForbidden=true}={}){
   let response;const epoch=this.#epoch;
   try{response=await this.fetch(API_ORIGIN+path,{method,headers:{Accept:'application/json',...(body!==undefined?{'Content-Type':'application/json'}:{}),...(token?{Authorization:'Bearer '+token}:{})},...(body===undefined?{}:{body:JSON.stringify(body)}),credentials:'omit',redirect:'error',cache:'no-store',referrerPolicy:'no-referrer',signal})}
   catch{throw new AuthError(signal?.aborted?'cancelled':'network',signal?.aborted?'Request cancelled or timed out. Try again.':'Cannot reach the authentication service. Check your connection and try again.')}
   if(!response.ok){
-   if(token&&token===this.#token&&epoch===this.#epoch&&(response.status===401||response.status===403)){
+   if(token&&token===this.#token&&epoch===this.#epoch&&(response.status===401||(response.status===403&&invalidateForbidden))){
     this.#clear();try{await this.#eraseSaved()}finally{this.onInvalidSession()}
    }
    throw new AuthError(...errors(response.status),response.status);
@@ -109,6 +109,21 @@ export class ApiAuthAdapter{
     if(current()){this.#clear();try{await this.#eraseSaved()}catch{}}
     await this.#revoke(token);throw error;
    }
+  });
+ }
+ async firebase(operation){
+  const paths={capabilities:['/firebase/capabilities','GET'],status:['/firebase/status','GET'],request:['/firebase/request-link','POST'],link:['/firebase/approved-link','GET']};
+  if(!Object.hasOwn(paths,operation))throw new AuthError('rejected','Unsupported Firebase action.');
+  return this.#operation(async(signal,check)=>{
+   if(!this.#token)throw new AuthError('unauthorized','Sign in again.');
+   const [path,method]=paths[operation];
+   const data=await this.#request(path,undefined,{token:this.#token,signal,method,invalidateForbidden:false});check();
+   if(operation==='capabilities'){if(typeof data.enabled!=='boolean'||data.security_version!==1)throw new AuthError('unexpected_response','Firebase service setup is incomplete.');return data}
+   if(operation==='link'){
+    let url;try{url=new URL(data.database_url)}catch{throw new AuthError('unexpected_response','The service returned an invalid database link.')}
+    if(url.protocol!=='https:'||url.username||url.password||url.port||url.search||url.hash||!/^[-a-z0-9]+(?:\.[-a-z0-9]+)?\.(firebaseio\.com|firebasedatabase\.app)$/.test(url.hostname)||!['','/'].includes(url.pathname))throw new AuthError('unexpected_response','The service returned an invalid database link.');
+   }else if(typeof data.status!=='string'||data.status.length>80)throw new AuthError('unexpected_response','The service returned an invalid Firebase status.');
+   return data;
   });
  }
  async restore(){

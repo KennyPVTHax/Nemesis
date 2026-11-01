@@ -1,5 +1,7 @@
 # NEMESIS source preservation
 
+The Phase 3 Telegram Firebase Manager extension is documented in [docs/phase3/DELIVERY_REPORT.md](docs/phase3/DELIVERY_REPORT.md), with [bootstrap](docs/phase3/BOOTSTRAP.md), [commands](docs/phase3/COMMANDS.md) and [installation/rollback](docs/phase3/DEPLOYMENT.md). It remains disabled until configured and approved for activation; no live Cloud or VPS deployment is claimed.
+
 This review import preserves the deployed FastAPI/Telegram registration/Firebase-inventory source and the current Android 0.3.0 application. It does not deploy, restart services, activate monitoring or merge itself.
 
 - backend/: ten checksum-identical exported Python modules.

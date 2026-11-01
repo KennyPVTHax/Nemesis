@@ -1,0 +1,113 @@
+{
+  "base_commit": "d4f967c745b3a0a457f013d6b7295b01b65ae174",
+  "files": [
+    {
+      "path": "android/src/auth/api-auth.mjs",
+      "baseline_path": "legacy/phase3-baseline/android/src/auth/api-auth.mjs",
+      "original_sha256": "893b7fb599c0390bb4aaf9dff4d73e1e57f0d3c97ed2180737101d146dc397d1",
+      "current_sha256": "41043e305ea134c04a05ea9d59b40e1b27c65744fc07d52d2b4080676c25bb5c"
+    },
+    {
+      "path": "android/src/auth/https-transport.mjs",
+      "baseline_path": "legacy/phase3-baseline/android/src/auth/https-transport.mjs",
+      "original_sha256": "505ead3f246dccf0ff2c7ba23d6534e366e9f1752c9994e057d704a8c719ed2f",
+      "current_sha256": "f62e9a33e6b80b5f18ef2ebde49862ea80154bcc48ad82c6264c87e860c0d982"
+    },
+    {
+      "path": "android/src/components/FirebaseSettings.jsx",
+      "baseline_path": null,
+      "original_sha256": null,
+      "current_sha256": "88ede6f89a37353ad7cc3cb89c4ceecbb07a5f79255776a318b6d842b023c916"
+    },
+    {
+      "path": "android/src/components/Settings.jsx",
+      "baseline_path": "legacy/phase3-baseline/android/src/components/Settings.jsx",
+      "original_sha256": "de06f62eeba328d17df650eb58b17f416096f65a2adf71197def26e542505445",
+      "current_sha256": "89654f7acdf265da21ea76798626cf5e087a4292065c93b187a702b5c47de458"
+    },
+    {
+      "path": "android/tests/firebase.test.mjs",
+      "baseline_path": null,
+      "original_sha256": null,
+      "current_sha256": "096adc70ba3e1e44fa7f50ce9c36a746fb9816e79474cb2579556509fd6b0aee"
+    },
+    {
+      "path": "backend/firebase_api.py",
+      "baseline_path": "legacy/phase3-baseline/backend/firebase_api.py",
+      "original_sha256": "9e499720cf5dfbb263a07c892b4a96c47be8591f2fa768dfab430981d25328e7",
+      "current_sha256": "066cec394a2c9faf20b54782a48a2afc8237c18076655e37de11e8fba80a653f"
+    },
+    {
+      "path": "backend/firebase_cli.py",
+      "baseline_path": "legacy/phase3-baseline/backend/firebase_cli.py",
+      "original_sha256": "79c8cd23881cb3882679cc26acf8ddc799c7576afb8e0c2aa752e6278ad3b53a",
+      "current_sha256": "1fc790f17dc76d7f0660cd0ed2481d7b3744a57886a8cb4e506713c120407f05"
+    },
+    {
+      "path": "backend/firebase_cloud.py",
+      "baseline_path": null,
+      "original_sha256": null,
+      "current_sha256": "e3a8c6dfa0240f960fbe55e175eb07e90bc03ecea9fb5ff06d6c9c8e8ea79ad8"
+    },
+    {
+      "path": "backend/firebase_config.py",
+      "baseline_path": null,
+      "original_sha256": null,
+      "current_sha256": "cca6046fc963bcb58d6ae97837488e3b39163bf7038d0d4d2a13952f897d8688"
+    },
+    {
+      "path": "backend/firebase_gateway.py",
+      "baseline_path": null,
+      "original_sha256": null,
+      "current_sha256": "b6fd90b0cacd165afcacc2ae910443884086d3fa7538bb5abffde4a327cfa47d"
+    },
+    {
+      "path": "backend/firebase_jobs.py",
+      "baseline_path": null,
+      "original_sha256": null,
+      "current_sha256": "a58ea13743b2803191a4239acc79c91ab9c4c56610773fbc818a9ebea72afc09"
+    },
+    {
+      "path": "backend/firebase_manager_store.py",
+      "baseline_path": null,
+      "original_sha256": null,
+      "current_sha256": "1d17d068db1b8670a8212a428151b215d3909ed563a4160c20030d232393f1a3"
+    },
+    {
+      "path": "backend/firebase_migration.py",
+      "baseline_path": null,
+      "original_sha256": null,
+      "current_sha256": "64e3e6ced9011bb0a112528d6f4455ee27beda60e8cc4c5026f481c2bfffeda9"
+    },
+    {
+      "path": "backend/firebase_pool.py",
+      "baseline_path": "legacy/phase3-baseline/backend/firebase_pool.py",
+      "original_sha256": "278cb7baed5479f8bf6b0ce5fc285af69c2c93b6dc0522ef3520bfe588d5e501",
+      "current_sha256": "00b83730c767b9950491765c7da769bbcc319d24689ee96884c76ae463eb5bae"
+    },
+    {
+      "path": "backend/firebase_telegram.py",
+      "baseline_path": null,
+      "original_sha256": null,
+      "current_sha256": "ee57cffa436c956d1b2cfa0e452893e839d8058c71d5d4d06bc1d85834721edd"
+    },
+    {
+      "path": "backend/firebase_worker.py",
+      "baseline_path": null,
+      "original_sha256": null,
+      "current_sha256": "323187788ad38f9f806ff99ea8f1aeafaf0d9d10211046e9ad45229ced5040ab"
+    },
+    {
+      "path": "backend/main.py",
+      "baseline_path": "legacy/phase3-baseline/backend/main.py",
+      "original_sha256": "d69c8934b00cb01be45ee860af0a8b7c62dc57fd2a42bb6e7e51e17acfe0907b",
+      "current_sha256": "2c8f59f0be664a6226099891fa4312a4f1cec5fa4a9621a164074b42dcffbd09"
+    },
+    {
+      "path": "backend/telegram_bot.py",
+      "baseline_path": "legacy/phase3-baseline/backend/telegram_bot.py",
+      "original_sha256": "92e399fa043b2fed116ec739f3ca3120c892b85c27fddd33f9db11a2d65786a4",
+      "current_sha256": "408067b238e36d91c900a62bd77897622f54adc4bbfce9abdce2b2644376e6cc"
+    }
+  ]
+}

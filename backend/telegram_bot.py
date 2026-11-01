@@ -81,6 +81,10 @@ def send(client, chat_id, text):
 
 
 def process(client, username, update):
+    from firebase_telegram import Manager,handle
+    manager=Manager(lambda chat,text,keyboard=None:api(client,'sendMessage',{'chat_id':chat,'text':text,'disable_web_page_preview':True,**({'reply_markup':keyboard} if keyboard else {})}))
+    if handle(update,username,manager,lambda q,text:api(client,'answerCallbackQuery',{'callback_query_id':q,'text':text})):
+        return
     message = update.get("message")
 
     if not isinstance(message, dict):
@@ -125,8 +129,8 @@ def process(client, username, update):
             "/help — Available commands\n"
             "/status — Check account linking\n"
             "/link CODE — Link owner account\n\n"
-            "Customer registration and OTP commands "
-            "will be added in the next stages."
+            "/newkey, /redeem KEY, /setid NAME, /registration, /setup, /cancel\n"
+            "Owner Firebase Manager: /firebase"
         )
 
     elif command == "/status":
@@ -203,7 +207,8 @@ def save_offset(value):
 
 def main():
     os.umask(0o077)
-
+    from firebase_pool import init
+    init()
     with httpx.Client(
         timeout=httpx.Timeout(30.0, connect=10.0)
     ) as client:
@@ -222,6 +227,12 @@ def main():
             flush=True
         )
 
+        from firebase_telegram import Manager
+        from firebase_worker import loop
+        import threading
+        worker_manager=Manager(lambda chat,text,keyboard=None:api(client,'sendMessage',{'chat_id':chat,'text':text,'disable_web_page_preview':True,**({'reply_markup':keyboard} if keyboard else {})}))
+        stop=threading.Event()
+        threading.Thread(target=loop,args=(worker_manager,stop),daemon=True).start()
         offset = load_offset()
 
         while True:
@@ -230,9 +241,11 @@ def main():
                     "offset": offset,
                     "timeout": 15,
                     "limit": 20,
-                    "allowed_updates": ["message"],
+                    "allowed_updates": ["message", "callback_query"],
                 })
 
+                from firebase_manager_store import transaction
+                with transaction() as db:db.execute('INSERT OR REPLACE INTO firebase_manager_health VALUES(1,?)',(int(time.time()),))
                 for update in updates:
                     try:
                         process(client, username, update)
@@ -244,6 +257,8 @@ def main():
                             flush=True,
                         )
 
+                    except Exception:
+                        print("Telegram update failed; update isolated",flush=True)
                     offset = update["update_id"] + 1
                     save_offset(offset)
 
