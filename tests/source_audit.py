@@ -11,6 +11,7 @@ for name in filter(None,files):
     assert p.name!='.env' and (not p.name.startswith('.env.') or p.name=='.env.example'),name
     content=subprocess.check_output(['git','show',':'+name],cwd=root)
     assert not any(re.search(pattern,content) for pattern in patterns),'Potential secret in '+name
+ui_changes={x['path']:x for x in json.loads((root/'docs/ui-preservation/SOURCE_CHANGES.json').read_text())['files']}
 changes={x['path']:x for x in json.loads((root/'docs/phase3/SOURCE_CHANGES.json').read_text())['files']}
 manifest=json.loads((root/'docs/IMPORT_MANIFEST.json').read_text())
 patch=json.loads((root/'docs/security/OTP_SOURCE_CHECKSUMS.json').read_text())
@@ -18,7 +19,12 @@ for row in manifest:
     if row['public_path']:
         assert row['public_path'] in files,row['public_path']
         original=root/row['public_path']
-        if row['public_path'] in changes:
+        if row['public_path'] in ui_changes:
+            change=ui_changes[row['public_path']]
+            original=root/change['baseline_path']
+            assert change['original_sha256']==row['sha256']
+            assert hashlib.sha256((root/row['public_path']).read_bytes()).hexdigest()==change['current_sha256']
+        elif row['public_path'] in changes:
             change=changes[row['public_path']]
             original=root/change['baseline_path']
             assert change['original_sha256']==row['sha256']

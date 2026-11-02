@@ -1,0 +1,63 @@
+{
+  "javascript": {
+    "passed": 51,
+    "failed": 0,
+    "skipped": 1,
+    "skip_reason": "Exact historical original HTML input paths unavailable; recovered alternatives deliberately not substituted"
+  },
+  "full_app_browser": {
+    "passed": 14,
+    "errors": [],
+    "scope": "Intercepted synthetic authentication/Firebase API responses; no live account login"
+  },
+  "isolated_control_scenarios": {
+    "passed": 55,
+    "errors": [],
+    "external_requests": []
+  },
+  "backend_and_metadata": {
+    "passed": 96,
+    "failed": 0,
+    "warning": "Existing Starlette/httpx deprecation"
+  },
+  "frontend_build": "PASS",
+  "capacitor_sync": "PASS",
+  "gradle_application_assemble_unit_lint": "PASS",
+  "lint": {
+    "errors": 0,
+    "warnings": 16
+  },
+  "original_render_controls": {
+    "button": 22,
+    "input": 4,
+    "select": 1,
+    "textarea": 1,
+    "link": 1,
+    "removed": 0
+  },
+  "apk": {
+    "path": "/workspace/artifacts/NEMESIS-ui-preservation-debug.apk",
+    "bytes": 5850810,
+    "sha256": "bf628a5296270d1aa87f1996ce734a7352fad22b9433bfaf51ad46a620208f2f",
+    "all_packaged_web_assets_match_final_dist": true,
+    "zip_dex_csp_keystore_and_credential_pattern_checks": "PASS",
+    "signer_matches_previous_ui_refresh_apk": true
+  },
+  "device_testing": "NOT AVAILABLE; browser IME/Back simulations and unchanged native source are not physical tests",
+  "conditional_ui_not_executed": [
+    "Original APK parse-result/error panes (no parser runs)",
+    "Old source error banner",
+    "Native exit prompt",
+    "Website-only channel gate; not inserted into authentication"
+  ],
+  "unchanged_components": [
+    "Authentication and API contracts",
+    "MainActivity/IME ownership",
+    "Keystore session implementation",
+    "Existing App four-tab navigation",
+    "Branding/icons/original generated CSS",
+    "Firebase customer adapter",
+    "Backend auth/OTP/Telegram/Firebase Manager",
+    "Production services/databases"
+  ]
+}

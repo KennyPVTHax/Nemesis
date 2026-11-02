@@ -15,3 +15,5 @@ import '@fontsource/jetbrains-mono/latin-700.css';
 import './generated/original.css';
 import './mobile.css';
 import './ui-refresh.css';
+
+import "./preserved-controls.css";

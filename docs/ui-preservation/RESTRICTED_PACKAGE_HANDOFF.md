@@ -1,0 +1,9 @@
+# Restricted owner review package (not in Git)
+
+Artifact: `/workspace/artifacts/NEMESIS_COMPLETE_ORIGINAL_SOURCE_REVIEW.zip`. Size: **1408291 bytes**, **167** inert review files. SHA-256: `73d0d80da68bd03a7f17af9119dec00e04c3cade580c63f677ed13545aad9835`.
+
+All ZIP payloads use WinZip AES-256 authenticated encryption (AES-CTR plus per-entry HMAC); filenames are visible metadata. Successful authenticated extraction, wrong-password rejection, tampered-tag rejection, every internal checksum and source-view manifest were verified. Known original bot token/recipient strings and the new package password are absent from all plaintext views. No executable HTML/JS/Python, credentials, captured financial records/customer messages, signing key or decryption key is in the package. Source code is presented as .txt with explicit redactions where needed. Exact sensitive originals remain in their separate AES-GCM evidence set and are not included in this owner review ZIP.
+
+The password is stored separately in protected private workspace storage and must be retrieved by the owner through a separate private file export, never printed in Git/PR/logs or embedded in the ZIP. Use 7-Zip's secure password prompt; do not use a password command-line argument. After extraction, run `sha256sum -c RECOVERY_CHECKSUMS.sha256` from the review root. Treat all recovered content as static text, not a deployable restoration tree.
+
+The download is prepared; **owner receipt, checksum verification and durable backup are not confirmed**. Move package and key separately into owner-controlled restricted durable storage. Codex workspace persistence alone is not an offsite backup. Source-recovery limits from PR5 remain: supplied index/fallback differ from the historical primary hash; exact backup/config identities match. Do not relabel a reconstructed/normalized file as original.
