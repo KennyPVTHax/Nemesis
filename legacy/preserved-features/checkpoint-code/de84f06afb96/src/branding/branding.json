@@ -1,0 +1,16 @@
+{
+  "source": "owner-supplied 1000321439.jpg",
+  "image": "/nemesis-logo.jpg",
+  "aspectRatio": "1280:714",
+  "launcherCrop": {
+    "x": 390,
+    "y": 55,
+    "width": 505,
+    "height": 425
+  },
+  "adaptiveSafeZoneDp": 66,
+  "adaptiveViewportDp": 108,
+  "background": "#080e15",
+  "replacementInstalled": true,
+  "sha256": "2662b265f5a176207968164694f3069e522792ba8acdb3567a1273bb9a74676d"
+}

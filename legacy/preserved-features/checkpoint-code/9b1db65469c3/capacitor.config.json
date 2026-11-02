@@ -1,0 +1,1 @@
+{"appId":"com.nemesis.panel.dev","appName":"NEMESIS Panel Dev","webDir":"dist","server":{"androidScheme":"https","cleartext":false},"android":{"allowMixedContent":false,"backgroundColor":"#0c020d"},"plugins":{"Keyboard":{"resize":"body","resizeOnFullScreen":true}}}

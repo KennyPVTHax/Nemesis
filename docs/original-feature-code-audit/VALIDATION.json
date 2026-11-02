@@ -1,0 +1,41 @@
+{
+  "audit_base": "44bd8d709fe2dd3fc2803f55cac72d05be30e71c",
+  "archive_container_checksums_verified": 6,
+  "unique_code_config_variants_verified": 92,
+  "backend_original_module_checksums_verified": 10,
+  "exported_backend_function_definitions_accounted_for": 49,
+  "historical_inventory_rows_reconciled": 34,
+  "original_website_feature_groups_examined": 40,
+  "recovered_exact_source_config_files": 35,
+  "recovered_sanitized_mock_files": 1,
+  "recovered_javascript_jsx_syntax_checks_passed": 15,
+  "active_android_backend_website_baseline_changes": 0,
+  "high_confidence_secret_findings": 0,
+  "gitleaks_actual_credentials_found": 0,
+  "gitleaks_known_digest_false_positives": [
+    {
+      "file": "docs/phase2/BASELINE.json",
+      "line": 34
+    },
+    {
+      "file": "docs/phase2/BASELINE.json",
+      "line": 130
+    },
+    {
+      "file": "docs/phase2/BASELINE.json",
+      "line": 131
+    }
+  ],
+  "diff_check": "Two inherited trailing-whitespace findings in exact recovered config.xml lines 4 and 5; source bytes intentionally retained.",
+  "evidence_files": {
+    "docs/original-feature-code-audit/evidence/FEATURE_PRESERVATION_CHECKLIST.md": "7b1f0736c3e89bf3545675e5f0867b85a4ba721fd3345ff92a491819069e61f4",
+    "docs/original-feature-code-audit/evidence/EXISTING_PROJECT_ANALYSIS.md": "4b9fe8a75dc51875e25d015321469705bf1e356ee19adb937e4767caf1a45eec",
+    "docs/original-feature-code-audit/evidence/README.md": "6f149c3c04f7e7c5471e4e4f0e8e7045eb70700110553d6ab0a76570fecf23ac"
+  },
+  "not_executed": [
+    "Android build/device tests",
+    "backend runtime suite (no active code changed)",
+    "production operations",
+    "legacy handler activation"
+  ]
+}
