@@ -1,3 +1,5 @@
+> Recovery addendum (2026-11-02): newly supplied website artifacts now recover many previously missing implementations in private quarantine. Three files match historical hashes; the supplied index/fallback differ. See [the master inventory](ORIGINAL_MASTER_FEATURE_INVENTORY.md) and [recovery manifest](original-recovery/RECOVERY_MANIFEST.json). The historical audit below is retained unchanged as the PR #4 evidence baseline.
+
 # Original feature implementation audit
 
 Audited 2026-11-02 against `44bd8d709fe2dd3fc2803f55cac72d05be30e71c` on `review/original-feature-code-audit`. This audit does not change or activate application/backend code.
