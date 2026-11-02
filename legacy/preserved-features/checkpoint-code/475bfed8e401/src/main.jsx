@@ -1,0 +1,21 @@
+import React from 'react';
+import {createRoot} from 'react-dom/client';
+import '@fontsource/inter/latin-400.css';
+import '@fontsource/inter/latin-500.css';
+import '@fontsource/inter/latin-600.css';
+import '@fontsource/inter/latin-700.css';
+import '@fontsource/outfit/latin-400.css';
+import '@fontsource/outfit/latin-500.css';
+import '@fontsource/outfit/latin-600.css';
+import '@fontsource/outfit/latin-700.css';
+import '@fontsource/outfit/latin-800.css';
+import '@fontsource/outfit/latin-900.css';
+import '@fontsource/jetbrains-mono/latin-400.css';
+import '@fontsource/jetbrains-mono/latin-500.css';
+import '@fontsource/jetbrains-mono/latin-600.css';
+import '@fontsource/jetbrains-mono/latin-700.css';
+import './generated/original.css';
+import './mobile.css';
+import App from './App.jsx';
+class ErrorBoundary extends React.Component{state={error:false};static getDerivedStateFromError(){return {error:true}}render(){return this.state.error?<main className="auth-page"><section className="auth-card"><h1>Unable to render this screen</h1><p>The application encountered an error. No customer data was loaded.</p><button className="primary" onClick={()=>location.reload()}>Return to login</button></section></main>:this.props.children}}
+createRoot(document.getElementById('root')).render(<ErrorBoundary><App/></ErrorBoundary>);

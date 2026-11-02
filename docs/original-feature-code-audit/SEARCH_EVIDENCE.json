@@ -1,0 +1,22 @@
+{
+  "base": "44bd8d709fe2dd3fc2803f55cac72d05be30e71c",
+  "remote_refs": [
+    "refs/remotes/origin/HEAD 3e2e35d7b02a55482b40ace757c26c8f5ac3594e",
+    "refs/remotes/origin/feature/telegram-firebase-manager 44bd8d709fe2dd3fc2803f55cac72d05be30e71c",
+    "refs/remotes/origin/import/complete-nemesis-source 8e5bc36f5bf88e6fdf9fd02dc1406d77befd8ed1",
+    "refs/remotes/origin/main 3e2e35d7b02a55482b40ace757c26c8f5ac3594e",
+    "refs/remotes/origin/security/fix-otp-attempt-rollback d4f967c745b3a0a457f013d6b7295b01b65ae174",
+    "refs/remotes/origin/source-review-2026-11-02 9e5fc720c523810675598e5c2a936bbcec7d6237"
+  ],
+  "git_blobs_inspected": 216,
+  "original_attachment_matches_git": [],
+  "original_attachment_matches_filesystem": [],
+  "original_attachment_paths_exist": {
+    "1-surgeignore": false,
+    "2-200.html": false,
+    "3-CNAME": false,
+    "4-index.html": false,
+    "5-index.html.bak": false
+  },
+  "limits": "Readable workspace/tmp files excluding dependencies/toolchains/caches/builds; all archive members hashed; original private upload service is not accessible. No production server or live website scraped."
+}

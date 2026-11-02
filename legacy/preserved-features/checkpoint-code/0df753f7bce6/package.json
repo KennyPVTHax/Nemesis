@@ -1,0 +1,1 @@
+{"name":"nemesis-ui-proposal","version":"0.1.0","private":true,"type":"module","scripts":{"build":"node scripts/build.mjs","preview:check":"node scripts/capture.mjs"},"dependencies":{"react":"19.1.0","react-dom":"19.1.0","@fontsource/inter":"5.2.5","@fontsource/outfit":"5.2.5","@fontsource/jetbrains-mono":"5.2.5"},"devDependencies":{"vite":"6.4.1","playwright":"1.56.1"}}
