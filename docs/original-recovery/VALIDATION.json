@@ -1,0 +1,82 @@
+{
+  "base_commit": "dcef2004dcb8229fd48e3b8d4edd0892e4db61a5",
+  "inventory_records": 127,
+  "website_configuration_records": 107,
+  "related_backend_android_records": 17,
+  "unproven_requirements": 3,
+  "classification_totals": {
+    "ACTIVE": 0,
+    "INACTIVE_PRESERVED": 95,
+    "PARTIALLY_IMPLEMENTED": 4,
+    "UI_ONLY": 1,
+    "NOT_IMPLEMENTED": 3,
+    "SOURCE_MISSING": 1,
+    "LEGACY_SUPERSEDED": 3,
+    "UNVERIFIED": 20
+  },
+  "financial_records": 22,
+  "financial_classifications": {
+    "INACTIVE_PRESERVED": 15,
+    "PARTIALLY_IMPLEMENTED": 3,
+    "UI_ONLY": 1,
+    "NOT_IMPLEMENTED": 2,
+    "UNVERIFIED": 1
+  },
+  "new_uploads_authenticated_to_their_computed_digests": 5,
+  "historical_exact_matches": 3,
+  "supplied_distinct_primary_fallback_variants": 2,
+  "named_top_level_app_routines_per_version": 36,
+  "versioned_app_function_definitions": 72,
+  "all_inline_function_ast_nodes_including_dependencies": 2886,
+  "same_top_level_functions_after_lf_normalization": 27,
+  "different_top_level_functions_after_lf_normalization": 9,
+  "source_feature_hash_mappings_verified": 122,
+  "recovery_metadata_tests_passed": 7,
+  "full_backend_and_recovery_suite": {
+    "passed": 96,
+    "failed": 0,
+    "warnings": 1,
+    "warning": "Existing Starlette/httpx deprecation"
+  },
+  "secret_review": {
+    "high_confidence_findings": 0,
+    "new_gitleaks_findings": 0,
+    "existing_gitleaks_false_positives": [
+      {
+        "file": "docs/phase2/BASELINE.json",
+        "line": 34,
+        "reason": "previously reviewed source SHA-256 provenance"
+      },
+      {
+        "file": "docs/phase2/BASELINE.json",
+        "line": 130,
+        "reason": "previously reviewed source SHA-256 provenance"
+      },
+      {
+        "file": "docs/phase2/BASELINE.json",
+        "line": 131,
+        "reason": "previously reviewed source SHA-256 provenance"
+      }
+    ]
+  },
+  "active_code_changes": 0,
+  "original_preservation_manifest_changes": 0,
+  "raw_sensitive_source_publications": 0,
+  "original_html_execution": false,
+  "production_access_or_deployment": false,
+  "android_build_and_device_tests": "Not rerun; active Android source unchanged. This is source recovery, not an APK delivery.",
+  "source_recovery_limitations": [
+    "Exact historical 925799-byte primary/fallback digest not supplied",
+    "Editable original project/source maps and child project remain unverified",
+    "Local restricted evidence is not a durable offsite backup; owner-controlled transfer required"
+  ],
+  "artifact_hashes": {
+    "RECOVERY_MANIFEST.json": "3cd4f85c757be3f5b26aea862687621e3cccac7c5ea0097d25964c13e0963764",
+    "VARIANT_COMPARISON.json": "ef04b4e9e95cb740420c3064f346345afba51f8e13019c7b4e2333b8e1796bbb",
+    "STYLE_AND_INFRASTRUCTURE.json": "e511af89a97b249a580087d085bd16c04d524c6222c709d16943d4458a9443b3",
+    "DEPENDENCY_GRAPH.json": "91832864cf0f81941e7d791bb6ba5c14341a78a14ee12e46212781006ea3fdee",
+    "UI_STORAGE_TIMER_INDEX.json": "af1161eb72c0130b8dc659e1cc8091a6f0df410609154c595e19c43986139143",
+    "FEATURE_MATRIX.json": "a9f66ec5af496101f174bcab1fb50073b4741c5866bb76988450abca1b219b23",
+    "FUNCTION_INDEX.json": "5d542d5ccc0055573f21cc7c2c602a1ac45eca2fc0e767015ed762e67864b42a"
+  }
+}
