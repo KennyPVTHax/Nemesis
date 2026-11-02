@@ -1,0 +1,282 @@
+{
+  "coverage": [
+    {
+      "id": "device-search",
+      "description": "Local fixture name/ID query",
+      "result": "PASS"
+    },
+    {
+      "id": "filter-online",
+      "description": "Selection applied; sensitive categories contain no data",
+      "result": "PASS"
+    },
+    {
+      "id": "filter-offline",
+      "description": "Selection applied; sensitive categories contain no data",
+      "result": "PASS"
+    },
+    {
+      "id": "filter-upi",
+      "description": "Selection applied; sensitive categories contain no data",
+      "result": "PASS"
+    },
+    {
+      "id": "filter-bank",
+      "description": "Selection applied; sensitive categories contain no data",
+      "result": "PASS"
+    },
+    {
+      "id": "filter-card",
+      "description": "Selection applied; sensitive categories contain no data",
+      "result": "PASS"
+    },
+    {
+      "id": "filter-all",
+      "description": "Selection applied; sensitive categories contain no data",
+      "result": "PASS"
+    },
+    {
+      "id": "sort-old",
+      "description": "Local ordering selection",
+      "result": "PASS"
+    },
+    {
+      "id": "sort-new",
+      "description": "Local ordering selection",
+      "result": "PASS"
+    },
+    {
+      "id": "sort-name",
+      "description": "Local ordering selection",
+      "result": "PASS"
+    },
+    {
+      "id": "sort-battery",
+      "description": "Local ordering selection",
+      "result": "PASS"
+    },
+    {
+      "id": "saved-device",
+      "description": "Local toggle affects saved filter without writing source credentials",
+      "result": "PASS"
+    },
+    {
+      "id": "Refresh dashboard",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "Telegram support link",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "Share merged accounts",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "device-card",
+      "description": "Card opens original-purpose details surface",
+      "result": "PASS"
+    },
+    {
+      "id": "safe-copy",
+      "description": "Only the displayed synthetic identifier copied",
+      "result": "PASS"
+    },
+    {
+      "id": "drawer-Info",
+      "description": "Section navigation preserved",
+      "result": "PASS"
+    },
+    {
+      "id": "drawer-Bank",
+      "description": "Section navigation preserved",
+      "result": "PASS"
+    },
+    {
+      "id": "Refresh bank information",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "Review financial information",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "Copy restricted information",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "drawer-Cards",
+      "description": "Section navigation preserved",
+      "result": "PASS"
+    },
+    {
+      "id": "Refresh card information",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "Reveal card information",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "Copy restricted information",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "drawer-SMS",
+      "description": "Section navigation preserved",
+      "result": "PASS"
+    },
+    {
+      "id": "Refresh messages",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "drawer-Auto Token",
+      "description": "Section navigation preserved",
+      "result": "PASS"
+    },
+    {
+      "id": "Refresh token information",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "Review financial information",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "Copy restricted information",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "drawer-Send SMS",
+      "description": "Section navigation preserved",
+      "result": "PASS"
+    },
+    {
+      "id": "Use device number",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "Send SMS",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "sms-draft",
+      "description": "SIM/recipient/message state works; submission cannot send",
+      "result": "PASS"
+    },
+    {
+      "id": "Copy restricted information",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "Delete device",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "drawer-back",
+      "description": "Android-style Back closes drawer after review overlay dismissal",
+      "result": "PASS"
+    },
+    {
+      "id": "sms-search",
+      "description": "Open/query/clear/close over isolated harmless fixture",
+      "result": "PASS"
+    },
+    {
+      "id": "Open merged accounts",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "Legacy Firebase operation",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "Copy connection link",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "account-select-share-merge",
+      "description": "Selection and share surface respond; no connection or credential link generated",
+      "result": "PASS"
+    },
+    {
+      "id": "Delete saved account \u2014 confirmation required",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "Connect Firebase account",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "APK inspection",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "APK drop inspection",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "Legacy Firebase operation",
+      "description": "Responsive review dialog; no backend operation",
+      "result": "PASS"
+    },
+    {
+      "id": "account-form",
+      "description": "Form/back/file chooser/unsupported connection all respond truthfully",
+      "result": "PASS"
+    },
+    {
+      "id": "cancel-account",
+      "description": "Cancel returns to account list without saving credentials",
+      "result": "PASS"
+    },
+    {
+      "id": "viewport-320",
+      "description": "No horizontal overflow",
+      "result": "PASS"
+    },
+    {
+      "id": "viewport-800",
+      "description": "No horizontal overflow",
+      "result": "PASS"
+    },
+    {
+      "id": "dashboard-logout",
+      "description": "Existing logout binding invoked; full auth suite checks server revocation",
+      "result": "PASS"
+    },
+    {
+      "id": "network-isolation",
+      "description": "Zero external requests or runtime errors",
+      "result": "PASS"
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Isolated synthetic component fixtures only; no device or customer data"
+}

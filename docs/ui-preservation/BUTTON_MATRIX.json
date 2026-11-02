@@ -1,0 +1,3197 @@
+{
+  "base_commit": "141910afdbd81989697f89e9d6d1ba1933218105",
+  "count_policy": "55 primary DOM control/action sites (including backdrops/containment) expand to 70 selectable actions; matching 55 backup sites retain independent locations. Two old website-only gate controls are recorded as owner decisions, not falsely claimed active in Android. 28 modern wrapper actions are separately identified. Repeated list instances are not counted as new controls. Four original theme choices map modern theme controls.",
+  "primary_source_sites": 55,
+  "backup_source_sites": 55,
+  "summary": {
+    "REQUIRES OWNER DECISION": 12,
+    "BACKEND DISABLED \u2014 UI PRESERVED": 11,
+    "LOCAL UI FUNCTIONAL": 63,
+    "FULLY FUNCTIONAL": 9,
+    "NOT IMPLEMENTED": 5
+  },
+  "controls": [
+    {
+      "id": "ORIG-001",
+      "control_name": "Copy information",
+      "source_site_id": "ORIG-001",
+      "screen": "Zu",
+      "original_function": "Zu::{'onClick': 'd'}",
+      "original_source_location": "4-index.html:18645",
+      "backup_source_location": "5-index.html.bak:18143",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "SafeCopy \u2192 review",
+      "category": "REQUIRES OWNER DECISION",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Disconnected or requires separate reviewed integration",
+      "sensitivity_classification": "Sensitive/privileged review",
+      "reason_for_disabling": "Original credential/device operations are not authorized integrations; no legacy network code is bundled.",
+      "safe_temporary_behavior": "Accurate unavailable/review dialog; no success claim or data transmission",
+      "future_integration_requirements": "Owner decision plus scoped authenticated adapter, security review and isolated tests",
+      "owner_decision_status": "Pending separate activation review",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-002",
+      "control_name": "Open saved account",
+      "source_site_id": "ORIG-002",
+      "screen": "s1",
+      "original_function": "s1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:18998",
+      "backup_source_location": "5-index.html.bak:18439",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "at \u2192 review",
+      "category": "BACKEND DISABLED \u2014 UI PRESERVED",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Disconnected or requires separate reviewed integration",
+      "sensitivity_classification": "Sensitive/privileged review",
+      "reason_for_disabling": "Original credential/device operations are not authorized integrations; no legacy network code is bundled.",
+      "safe_temporary_behavior": "Accurate unavailable/review dialog; no success claim or data transmission",
+      "future_integration_requirements": "Owner decision plus scoped authenticated adapter, security review and isolated tests",
+      "owner_decision_status": "Pending separate activation review",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-003",
+      "control_name": "Select account for merge",
+      "source_site_id": "ORIG-003",
+      "screen": "s1",
+      "original_function": "s1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19001",
+      "backup_source_location": "5-index.html.bak:18442",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "toggleSel",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-004",
+      "control_name": "Share connection link",
+      "source_site_id": "ORIG-004",
+      "screen": "s1",
+      "original_function": "s1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19029",
+      "backup_source_location": "5-index.html.bak:18470",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "c \u2192 E",
+      "category": "REQUIRES OWNER DECISION",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Disconnected or requires separate reviewed integration",
+      "sensitivity_classification": "Sensitive/privileged review",
+      "reason_for_disabling": "Original credential/device operations are not authorized integrations; no legacy network code is bundled.",
+      "safe_temporary_behavior": "Accurate unavailable/review dialog; no success claim or data transmission",
+      "future_integration_requirements": "Owner decision plus scoped authenticated adapter, security review and isolated tests",
+      "owner_decision_status": "Pending separate activation review",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-005",
+      "control_name": "Delete saved account",
+      "source_site_id": "ORIG-005",
+      "screen": "s1",
+      "original_function": "s1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19036",
+      "backup_source_location": "5-index.html.bak:18477",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "Z \u2192 review",
+      "category": "BACKEND DISABLED \u2014 UI PRESERVED",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Disconnected or requires separate reviewed integration",
+      "sensitivity_classification": "Sensitive/privileged review",
+      "reason_for_disabling": "Original credential/device operations are not authorized integrations; no legacy network code is bundled.",
+      "safe_temporary_behavior": "Accurate unavailable/review dialog; no success claim or data transmission",
+      "future_integration_requirements": "Owner decision plus scoped authenticated adapter, security review and isolated tests",
+      "owner_decision_status": "Pending separate activation review",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-006",
+      "control_name": "Select/deselect all accounts",
+      "source_site_id": "ORIG-006",
+      "screen": "s1",
+      "original_function": "s1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19047",
+      "backup_source_location": "5-index.html.bak:18488",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "setMSel",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-007",
+      "control_name": "Open merged accounts",
+      "source_site_id": "ORIG-007",
+      "screen": "s1",
+      "original_function": "s1::{'onClick': 'openMerged'}",
+      "original_source_location": "4-index.html:19053",
+      "backup_source_location": "5-index.html.bak:18494",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "openMerged \u2192 review",
+      "category": "BACKEND DISABLED \u2014 UI PRESERVED",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Disconnected or requires separate reviewed integration",
+      "sensitivity_classification": "Sensitive/privileged review",
+      "reason_for_disabling": "Original credential/device operations are not authorized integrations; no legacy network code is bundled.",
+      "safe_temporary_behavior": "Accurate unavailable/review dialog; no success claim or data transmission",
+      "future_integration_requirements": "Owner decision plus scoped authenticated adapter, security review and isolated tests",
+      "owner_decision_status": "Pending separate activation review",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-008",
+      "control_name": "Share selected accounts",
+      "source_site_id": "ORIG-008",
+      "screen": "s1",
+      "original_function": "s1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19057",
+      "backup_source_location": "5-index.html.bak:18498",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "blocked \u2192 review",
+      "category": "REQUIRES OWNER DECISION",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Disconnected or requires separate reviewed integration",
+      "sensitivity_classification": "Sensitive/privileged review",
+      "reason_for_disabling": "Original credential/device operations are not authorized integrations; no legacy network code is bundled.",
+      "safe_temporary_behavior": "Accurate unavailable/review dialog; no success claim or data transmission",
+      "future_integration_requirements": "Owner decision plus scoped authenticated adapter, security review and isolated tests",
+      "owner_decision_status": "Pending separate activation review",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-009",
+      "control_name": "New Account",
+      "source_site_id": "ORIG-009",
+      "screen": "s1",
+      "original_function": "s1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19067",
+      "backup_source_location": "5-index.html.bak:18508",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "S(true), y",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-010",
+      "control_name": "Back to saved accounts",
+      "source_site_id": "ORIG-010",
+      "screen": "s1",
+      "original_function": "s1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19080",
+      "backup_source_location": "5-index.html.bak:18521",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "S(false), y",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-011",
+      "control_name": "APK drop zone",
+      "source_site_id": "ORIG-011",
+      "screen": "s1",
+      "original_function": "s1::{'onDrop': 'bt', 'onDragOver': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19097",
+      "backup_source_location": "5-index.html.bak:18538",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "bt / native file chooser",
+      "category": "BACKEND DISABLED \u2014 UI PRESERVED",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Disconnected or requires separate reviewed integration",
+      "sensitivity_classification": "Sensitive/privileged review",
+      "reason_for_disabling": "Original credential/device operations are not authorized integrations; no legacy network code is bundled.",
+      "safe_temporary_behavior": "Accurate unavailable/review dialog; no success claim or data transmission",
+      "future_integration_requirements": "Owner decision plus scoped authenticated adapter, security review and isolated tests",
+      "owner_decision_status": "Pending separate activation review",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-012",
+      "control_name": "APK file chooser",
+      "source_site_id": "ORIG-012",
+      "screen": "s1",
+      "original_function": "s1::{'onChange': 'it', 'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19116",
+      "backup_source_location": "5-index.html.bak:18557",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "it",
+      "category": "BACKEND DISABLED \u2014 UI PRESERVED",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Disconnected or requires separate reviewed integration",
+      "sensitivity_classification": "Sensitive/privileged review",
+      "reason_for_disabling": "Original credential/device operations are not authorized integrations; no legacy network code is bundled.",
+      "safe_temporary_behavior": "Accurate unavailable/review dialog; no success claim or data transmission",
+      "future_integration_requirements": "Owner decision plus scoped authenticated adapter, security review and isolated tests",
+      "owner_decision_status": "Pending separate activation review",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-013",
+      "control_name": "Close APK error/result",
+      "source_site_id": "ORIG-013",
+      "screen": "s1",
+      "original_function": "s1::{'onClick': 'y'}",
+      "original_source_location": "4-index.html:19146",
+      "backup_source_location": "5-index.html.bak:18587",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "y",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "Conditional APK result/error reset preserved; actual parsing disabled; not exercised by pretending a parse succeeded.",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-014",
+      "control_name": "Reset APK result",
+      "source_site_id": "ORIG-014",
+      "screen": "s1",
+      "original_function": "s1::{'onClick': 'y'}",
+      "original_source_location": "4-index.html:19162",
+      "backup_source_location": "5-index.html.bak:18603",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "y",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "Conditional APK result/error reset preserved; actual parsing disabled; not exercised by pretending a parse succeeded.",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-015",
+      "control_name": "Database URL input",
+      "source_site_id": "ORIG-015",
+      "screen": "s1",
+      "original_function": "s1::{'onChange': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19222",
+      "backup_source_location": "5-index.html.bak:18663",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "p",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-016",
+      "control_name": "Database credential input",
+      "source_site_id": "ORIG-016",
+      "screen": "s1",
+      "original_function": "s1::{'onChange': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19236",
+      "backup_source_location": "5-index.html.bak:18677",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "o",
+      "category": "REQUIRES OWNER DECISION",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Disconnected or requires separate reviewed integration",
+      "sensitivity_classification": "Sensitive/privileged review",
+      "reason_for_disabling": "Original credential/device operations are not authorized integrations; no legacy network code is bundled.",
+      "safe_temporary_behavior": "Accurate unavailable/review dialog; no success claim or data transmission",
+      "future_integration_requirements": "Owner decision plus scoped authenticated adapter, security review and isolated tests",
+      "owner_decision_status": "Pending separate activation review",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-017",
+      "control_name": "Add accounts",
+      "source_site_id": "ORIG-017",
+      "screen": "s1",
+      "original_function": "s1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19246",
+      "backup_source_location": "5-index.html.bak:18687",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "blocked \u2192 review",
+      "category": "BACKEND DISABLED \u2014 UI PRESERVED",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Disconnected or requires separate reviewed integration",
+      "sensitivity_classification": "Sensitive/privileged review",
+      "reason_for_disabling": "Original credential/device operations are not authorized integrations; no legacy network code is bundled.",
+      "safe_temporary_behavior": "Accurate unavailable/review dialog; no success claim or data transmission",
+      "future_integration_requirements": "Owner decision plus scoped authenticated adapter, security review and isolated tests",
+      "owner_decision_status": "Pending separate activation review",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-018",
+      "control_name": "Cancel account form",
+      "source_site_id": "ORIG-018",
+      "screen": "s1",
+      "original_function": "s1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19283",
+      "backup_source_location": "5-index.html.bak:18724",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "S(false), y",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-019",
+      "control_name": "Share dialog backdrop",
+      "source_site_id": "ORIG-019",
+      "screen": "s1",
+      "original_function": "s1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19299",
+      "backup_source_location": "5-index.html.bak:18740",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "E(\"\")",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-020",
+      "control_name": "Share dialog event containment",
+      "source_site_id": "ORIG-020",
+      "screen": "s1",
+      "original_function": "s1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19306",
+      "backup_source_location": "5-index.html.bak:18747",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "stopPropagation",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-021",
+      "control_name": "Close connection link",
+      "source_site_id": "ORIG-021",
+      "screen": "s1",
+      "original_function": "s1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19327",
+      "backup_source_location": "5-index.html.bak:18768",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "E(\"\")",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-022",
+      "control_name": "Copy connection link",
+      "source_site_id": "ORIG-022",
+      "screen": "s1",
+      "original_function": "s1::{'onClick': 'I'}",
+      "original_source_location": "4-index.html:19339",
+      "backup_source_location": "5-index.html.bak:18780",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "I \u2192 review",
+      "category": "REQUIRES OWNER DECISION",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Disconnected or requires separate reviewed integration",
+      "sensitivity_classification": "Sensitive/privileged review",
+      "reason_for_disabling": "Original credential/device operations are not authorized integrations; no legacy network code is bundled.",
+      "safe_temporary_behavior": "Accurate unavailable/review dialog; no success claim or data transmission",
+      "future_integration_requirements": "Owner decision plus scoped authenticated adapter, security review and isolated tests",
+      "owner_decision_status": "Pending separate activation review",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-023",
+      "control_name": "Reveal card information",
+      "source_site_id": "ORIG-023",
+      "screen": "o1",
+      "original_function": "o1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19546",
+      "backup_source_location": "5-index.html.bak:18983",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "review(\"Reveal card information\")",
+      "category": "REQUIRES OWNER DECISION",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Disconnected or requires separate reviewed integration",
+      "sensitivity_classification": "Sensitive/privileged review",
+      "reason_for_disabling": "Original credential/device operations are not authorized integrations; no legacy network code is bundled.",
+      "safe_temporary_behavior": "Accurate unavailable/review dialog; no success claim or data transmission",
+      "future_integration_requirements": "Owner decision plus scoped authenticated adapter, security review and isolated tests",
+      "owner_decision_status": "Pending separate activation review",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-024",
+      "control_name": "Open device card",
+      "source_site_id": "ORIG-024",
+      "screen": "f1",
+      "original_function": "f1::{'onClick': 'tt'}",
+      "original_source_location": "4-index.html:19580",
+      "backup_source_location": "5-index.html.bak:19012",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "q / T",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-025",
+      "control_name": "Save/unsave device",
+      "source_site_id": "ORIG-025",
+      "screen": "f1",
+      "original_function": "f1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19608",
+      "backup_source_location": "5-index.html.bak:19040",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "Sv / setSv",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-026",
+      "control_name": "Open device details",
+      "source_site_id": "ORIG-026",
+      "screen": "f1",
+      "original_function": "f1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19627",
+      "backup_source_location": "5-index.html.bak:19059",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "q / T",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-027",
+      "control_name": "Drawer backdrop",
+      "source_site_id": "ORIG-027",
+      "screen": "d1",
+      "original_function": "d1::{'onClick': 'd'}",
+      "original_source_location": "4-index.html:19883",
+      "backup_source_location": "5-index.html.bak:19284",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "SafeDialog.onClose",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-028",
+      "control_name": "Drawer event containment",
+      "source_site_id": "ORIG-028",
+      "screen": "d1",
+      "original_function": "d1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19888",
+      "backup_source_location": "5-index.html.bak:19289",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "stopPropagation",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-029",
+      "control_name": "Delete device",
+      "source_site_id": "ORIG-029",
+      "screen": "d1",
+      "original_function": "d1::{'onClick': '$'}",
+      "original_source_location": "4-index.html:19911",
+      "backup_source_location": "5-index.html.bak:19312",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "setConfirmDelete \u2192 review",
+      "category": "BACKEND DISABLED \u2014 UI PRESERVED",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Disconnected or requires separate reviewed integration",
+      "sensitivity_classification": "Sensitive/privileged review",
+      "reason_for_disabling": "Original credential/device operations are not authorized integrations; no legacy network code is bundled.",
+      "safe_temporary_behavior": "Accurate unavailable/review dialog; no success claim or data transmission",
+      "future_integration_requirements": "Owner decision plus scoped authenticated adapter, security review and isolated tests",
+      "owner_decision_status": "Pending separate activation review",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-030",
+      "control_name": "Close drawer",
+      "source_site_id": "ORIG-030",
+      "screen": "d1",
+      "original_function": "d1::{'onClick': 'd'}",
+      "original_source_location": "4-index.html:19917",
+      "backup_source_location": "5-index.html.bak:19318",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "onClose / T(null)",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-031-1",
+      "control_name": "Info",
+      "source_site_id": "ORIG-031",
+      "screen": "d1",
+      "original_function": "d1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19966",
+      "backup_source_location": "5-index.html.bak:19367",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "setTab",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-031-2",
+      "control_name": "Bank",
+      "source_site_id": "ORIG-031",
+      "screen": "d1",
+      "original_function": "d1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19966",
+      "backup_source_location": "5-index.html.bak:19367",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "setTab",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-031-3",
+      "control_name": "Cards",
+      "source_site_id": "ORIG-031",
+      "screen": "d1",
+      "original_function": "d1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19966",
+      "backup_source_location": "5-index.html.bak:19367",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "setTab",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-031-4",
+      "control_name": "SMS",
+      "source_site_id": "ORIG-031",
+      "screen": "d1",
+      "original_function": "d1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19966",
+      "backup_source_location": "5-index.html.bak:19367",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "setTab",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-031-5",
+      "control_name": "Auto Token",
+      "source_site_id": "ORIG-031",
+      "screen": "d1",
+      "original_function": "d1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19966",
+      "backup_source_location": "5-index.html.bak:19367",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "setTab",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-031-6",
+      "control_name": "Send SMS",
+      "source_site_id": "ORIG-031",
+      "screen": "d1",
+      "original_function": "d1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:19966",
+      "backup_source_location": "5-index.html.bak:19367",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "setTab",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-032",
+      "control_name": "Refresh bank information",
+      "source_site_id": "ORIG-032",
+      "screen": "d1",
+      "original_function": "d1::{'onClick': 'V'}",
+      "original_source_location": "4-index.html:20057",
+      "backup_source_location": "5-index.html.bak:19458",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "review(\"Refresh bank information\")",
+      "category": "BACKEND DISABLED \u2014 UI PRESERVED",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Disconnected or requires separate reviewed integration",
+      "sensitivity_classification": "Sensitive/privileged review",
+      "reason_for_disabling": "Original credential/device operations are not authorized integrations; no legacy network code is bundled.",
+      "safe_temporary_behavior": "Accurate unavailable/review dialog; no success claim or data transmission",
+      "future_integration_requirements": "Owner decision plus scoped authenticated adapter, security review and isolated tests",
+      "owner_decision_status": "Pending separate activation review",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-033",
+      "control_name": "Refresh card information",
+      "source_site_id": "ORIG-033",
+      "screen": "d1",
+      "original_function": "d1::{'onClick': 'V'}",
+      "original_source_location": "4-index.html:20113",
+      "backup_source_location": "5-index.html.bak:19514",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "review(\"Refresh card information\")",
+      "category": "BACKEND DISABLED \u2014 UI PRESERVED",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Disconnected or requires separate reviewed integration",
+      "sensitivity_classification": "Sensitive/privileged review",
+      "reason_for_disabling": "Original credential/device operations are not authorized integrations; no legacy network code is bundled.",
+      "safe_temporary_behavior": "Accurate unavailable/review dialog; no success claim or data transmission",
+      "future_integration_requirements": "Owner decision plus scoped authenticated adapter, security review and isolated tests",
+      "owner_decision_status": "Pending separate activation review",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-034",
+      "control_name": "Refresh messages",
+      "source_site_id": "ORIG-034",
+      "screen": "d1",
+      "original_function": "d1::{'onClick': 'V'}",
+      "original_source_location": "4-index.html:20141",
+      "backup_source_location": "5-index.html.bak:19542",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "review(\"Refresh messages\")",
+      "category": "BACKEND DISABLED \u2014 UI PRESERVED",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Disconnected or requires separate reviewed integration",
+      "sensitivity_classification": "Sensitive/privileged review",
+      "reason_for_disabling": "Original credential/device operations are not authorized integrations; no legacy network code is bundled.",
+      "safe_temporary_behavior": "Accurate unavailable/review dialog; no success claim or data transmission",
+      "future_integration_requirements": "Owner decision plus scoped authenticated adapter, security review and isolated tests",
+      "owner_decision_status": "Pending separate activation review",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-035",
+      "control_name": "Copy bank token-labelled information",
+      "source_site_id": "ORIG-035",
+      "screen": "d1",
+      "original_function": "d1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:20251",
+      "backup_source_location": "5-index.html.bak:19648",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "review(\"Copy restricted information\")",
+      "category": "REQUIRES OWNER DECISION",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Disconnected or requires separate reviewed integration",
+      "sensitivity_classification": "Sensitive/privileged review",
+      "reason_for_disabling": "Original credential/device operations are not authorized integrations; no legacy network code is bundled.",
+      "safe_temporary_behavior": "Accurate unavailable/review dialog; no success claim or data transmission",
+      "future_integration_requirements": "Owner decision plus scoped authenticated adapter, security review and isolated tests",
+      "owner_decision_status": "Pending separate activation review",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-036",
+      "control_name": "Copy card-labelled information",
+      "source_site_id": "ORIG-036",
+      "screen": "d1",
+      "original_function": "d1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:20273",
+      "backup_source_location": "5-index.html.bak:19670",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "review(\"Copy restricted information\")",
+      "category": "REQUIRES OWNER DECISION",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Disconnected or requires separate reviewed integration",
+      "sensitivity_classification": "Sensitive/privileged review",
+      "reason_for_disabling": "Original credential/device operations are not authorized integrations; no legacy network code is bundled.",
+      "safe_temporary_behavior": "Accurate unavailable/review dialog; no success claim or data transmission",
+      "future_integration_requirements": "Owner decision plus scoped authenticated adapter, security review and isolated tests",
+      "owner_decision_status": "Pending separate activation review",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-037-1",
+      "control_name": "SIM 1",
+      "source_site_id": "ORIG-037",
+      "screen": "d1",
+      "original_function": "d1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:20292",
+      "backup_source_location": "5-index.html.bak:19689",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "setSim",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-037-2",
+      "control_name": "SIM 2",
+      "source_site_id": "ORIG-037",
+      "screen": "d1",
+      "original_function": "d1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:20292",
+      "backup_source_location": "5-index.html.bak:19689",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "setSim",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-038",
+      "control_name": "Recipient input",
+      "source_site_id": "ORIG-038",
+      "screen": "d1",
+      "original_function": "d1::{'onChange': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:20302",
+      "backup_source_location": "5-index.html.bak:19699",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "setNumber",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-039",
+      "control_name": "Message input",
+      "source_site_id": "ORIG-039",
+      "screen": "d1",
+      "original_function": "d1::{'onChange': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:20313",
+      "backup_source_location": "5-index.html.bak:19710",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "setMessage",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-040",
+      "control_name": "Send SMS",
+      "source_site_id": "ORIG-040",
+      "screen": "d1",
+      "original_function": "d1::{'onClick': 'ot'}",
+      "original_source_location": "4-index.html:20323",
+      "backup_source_location": "5-index.html.bak:19720",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "preventDefault; review(\"Send SMS\")",
+      "category": "BACKEND DISABLED \u2014 UI PRESERVED",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Disconnected or requires separate reviewed integration",
+      "sensitivity_classification": "Sensitive/privileged review",
+      "reason_for_disabling": "Original credential/device operations are not authorized integrations; no legacy network code is bundled.",
+      "safe_temporary_behavior": "Accurate unavailable/review dialog; no success claim or data transmission",
+      "future_integration_requirements": "Owner decision plus scoped authenticated adapter, security review and isolated tests",
+      "owner_decision_status": "Pending separate activation review",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-041",
+      "control_name": "Use device number",
+      "source_site_id": "ORIG-041",
+      "screen": "d1",
+      "original_function": "d1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:20332",
+      "backup_source_location": "5-index.html.bak:19729",
+      "current_component": "android/src/components/PreservedControls.jsx",
+      "current_callback": "setNumber or review",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-042",
+      "control_name": "Dismiss dashboard error",
+      "source_site_id": "ORIG-042",
+      "screen": "h1",
+      "original_function": "h1::{'onClick': 'tt'}",
+      "original_source_location": "4-index.html:20357",
+      "backup_source_location": "5-index.html.bak:19754",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "h1.onDismiss",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-043",
+      "control_name": "Device search",
+      "source_site_id": "ORIG-043",
+      "screen": "p1",
+      "original_function": "p1::{'onChange': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:20707",
+      "backup_source_location": "5-index.html.bak:20043",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "z",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-044",
+      "control_name": "Dashboard logout",
+      "source_site_id": "ORIG-044",
+      "screen": "p1",
+      "original_function": "p1::{'onClick': 'Z'}",
+      "original_source_location": "4-index.html:20722",
+      "backup_source_location": "5-index.html.bak:20058",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "logout",
+      "category": "FULLY FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Existing reviewed auth service",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Existing API operation",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-045",
+      "control_name": "Share merged accounts",
+      "source_site_id": "ORIG-045",
+      "screen": "p1",
+      "original_function": "p1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:20728",
+      "backup_source_location": "5-index.html.bak:20064",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "review(\"Share merged accounts\")",
+      "category": "REQUIRES OWNER DECISION",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Disconnected or requires separate reviewed integration",
+      "sensitivity_classification": "Sensitive/privileged review",
+      "reason_for_disabling": "Original credential/device operations are not authorized integrations; no legacy network code is bundled.",
+      "safe_temporary_behavior": "Accurate unavailable/review dialog; no success claim or data transmission",
+      "future_integration_requirements": "Owner decision plus scoped authenticated adapter, security review and isolated tests",
+      "owner_decision_status": "Pending separate activation review",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-046",
+      "control_name": "Telegram support",
+      "source_site_id": "ORIG-046",
+      "screen": "p1",
+      "original_function": "p1::{}",
+      "original_source_location": "4-index.html:20739",
+      "backup_source_location": "5-index.html.bak:20075",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "preventDefault; review(\"Telegram support link\")",
+      "category": "REQUIRES OWNER DECISION",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Disconnected or requires separate reviewed integration",
+      "sensitivity_classification": "Sensitive/privileged review",
+      "reason_for_disabling": "Original credential/device operations are not authorized integrations; no legacy network code is bundled.",
+      "safe_temporary_behavior": "Accurate unavailable/review dialog; no success claim or data transmission",
+      "future_integration_requirements": "Owner decision plus scoped authenticated adapter, security review and isolated tests",
+      "owner_decision_status": "Pending separate activation review",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-047-1",
+      "control_name": "all",
+      "source_site_id": "ORIG-047",
+      "screen": "p1",
+      "original_function": "p1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:20834",
+      "backup_source_location": "5-index.html.bak:20170",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "C",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-047-2",
+      "control_name": "online",
+      "source_site_id": "ORIG-047",
+      "screen": "p1",
+      "original_function": "p1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:20834",
+      "backup_source_location": "5-index.html.bak:20170",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "C",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-047-3",
+      "control_name": "offline",
+      "source_site_id": "ORIG-047",
+      "screen": "p1",
+      "original_function": "p1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:20834",
+      "backup_source_location": "5-index.html.bak:20170",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "C",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-047-4",
+      "control_name": "saved",
+      "source_site_id": "ORIG-047",
+      "screen": "p1",
+      "original_function": "p1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:20834",
+      "backup_source_location": "5-index.html.bak:20170",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "C",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-047-5",
+      "control_name": "upi",
+      "source_site_id": "ORIG-047",
+      "screen": "p1",
+      "original_function": "p1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:20834",
+      "backup_source_location": "5-index.html.bak:20170",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "C",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-047-6",
+      "control_name": "bank",
+      "source_site_id": "ORIG-047",
+      "screen": "p1",
+      "original_function": "p1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:20834",
+      "backup_source_location": "5-index.html.bak:20170",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "C",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-047-7",
+      "control_name": "card",
+      "source_site_id": "ORIG-047",
+      "screen": "p1",
+      "original_function": "p1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:20834",
+      "backup_source_location": "5-index.html.bak:20170",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "C",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-048",
+      "control_name": "Open SMS search",
+      "source_site_id": "ORIG-048",
+      "screen": "p1",
+      "original_function": "p1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:20840",
+      "backup_source_location": "5-index.html.bak:20176",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "setSmsSearch(true)",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-049-1",
+      "control_name": "Newest",
+      "source_site_id": "ORIG-049",
+      "screen": "p1",
+      "original_function": "p1::{'onChange': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:20860",
+      "backup_source_location": "5-index.html.bak:20196",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "E",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-049-2",
+      "control_name": "Oldest",
+      "source_site_id": "ORIG-049",
+      "screen": "p1",
+      "original_function": "p1::{'onChange': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:20860",
+      "backup_source_location": "5-index.html.bak:20196",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "E",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-049-3",
+      "control_name": "Name",
+      "source_site_id": "ORIG-049",
+      "screen": "p1",
+      "original_function": "p1::{'onChange': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:20860",
+      "backup_source_location": "5-index.html.bak:20196",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "E",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-049-4",
+      "control_name": "Battery",
+      "source_site_id": "ORIG-049",
+      "screen": "p1",
+      "original_function": "p1::{'onChange': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:20860",
+      "backup_source_location": "5-index.html.bak:20196",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "E",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-050",
+      "control_name": "Refresh dashboard",
+      "source_site_id": "ORIG-050",
+      "screen": "p1",
+      "original_function": "p1::{'onClick': 'I'}",
+      "original_source_location": "4-index.html:20877",
+      "backup_source_location": "5-index.html.bak:20213",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "I \u2192 review",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-051",
+      "control_name": "SMS search backdrop",
+      "source_site_id": "ORIG-051",
+      "screen": "p1",
+      "original_function": "p1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:20951",
+      "backup_source_location": "5-index.html.bak:20287",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "setSmsSearch(false)",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-052",
+      "control_name": "SMS search event containment",
+      "source_site_id": "ORIG-052",
+      "screen": "p1",
+      "original_function": "p1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:20955",
+      "backup_source_location": "5-index.html.bak:20291",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "stopPropagation",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-053",
+      "control_name": "Close SMS search",
+      "source_site_id": "ORIG-053",
+      "screen": "p1",
+      "original_function": "p1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:20993",
+      "backup_source_location": "5-index.html.bak:20329",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "setSmsSearch(false)",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-054",
+      "control_name": "SMS search query",
+      "source_site_id": "ORIG-054",
+      "screen": "p1",
+      "original_function": "p1::{'onChange': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:21045",
+      "backup_source_location": "5-index.html.bak:20381",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "setSmsSearchQuery / setSmsResults",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "ORIG-055",
+      "control_name": "Clear SMS search",
+      "source_site_id": "ORIG-055",
+      "screen": "p1",
+      "original_function": "p1::{'onClick': 'ArrowFunctionExpression'}",
+      "original_source_location": "4-index.html:21074",
+      "backup_source_location": "5-index.html.bak:20410",
+      "current_component": "android/src/generated/OriginalUI.jsx",
+      "current_callback": "setSmsSearchQuery / setSmsResults",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "LOCAL RESPONSE IMPLEMENTED; some data-conditional controls require a record and remain absent in normal empty state",
+      "backend_implementation_status": "Not required",
+      "sensitivity_classification": "Non-sensitive local UI / existing authentication",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Changes local UI state only",
+      "future_integration_requirements": "No change requested",
+      "owner_decision_status": "Retain",
+      "verification": "See button-coverage report; conditional APK results and original error branches are source-preserved, not all rendered in normal empty state"
+    },
+    {
+      "id": "WEB-GATE-70",
+      "control_name": "Join Channel",
+      "source_site_id": "HTML_GATE",
+      "screen": "Original website overlay (not present in Android baseline)",
+      "original_function": "gate click listeners",
+      "original_source_location": "4-index.html:4819-4866",
+      "current_component": "Restricted offline review views; not inserted into working authentication",
+      "current_callback": "Not applicable to Android baseline",
+      "category": "REQUIRES OWNER DECISION",
+      "ui_interaction_status": "SOURCE UI PRESERVED IN PACKAGE; not an active Android control",
+      "backend_implementation_status": "No genuine channel-membership verification in original",
+      "sensitivity_classification": "Authentication/owner workflow decision",
+      "reason_for_disabling": "Inserting a client-side channel gate would alter reviewed authentication; no activation requested.",
+      "safe_temporary_behavior": "Static offline view only",
+      "future_integration_requirements": "Explicit owner workflow decision; no client click treated as authentication",
+      "owner_decision_status": "Pending",
+      "verification": "Static source only"
+    },
+    {
+      "id": "WEB-GATE-71",
+      "control_name": "Continue after channel click",
+      "source_site_id": "HTML_GATE",
+      "screen": "Original website overlay (not present in Android baseline)",
+      "original_function": "gate click listeners",
+      "original_source_location": "4-index.html:4819-4866",
+      "current_component": "Restricted offline review views; not inserted into working authentication",
+      "current_callback": "Not applicable to Android baseline",
+      "category": "REQUIRES OWNER DECISION",
+      "ui_interaction_status": "SOURCE UI PRESERVED IN PACKAGE; not an active Android control",
+      "backend_implementation_status": "No genuine channel-membership verification in original",
+      "sensitivity_classification": "Authentication/owner workflow decision",
+      "reason_for_disabling": "Inserting a client-side channel gate would alter reviewed authentication; no activation requested.",
+      "safe_temporary_behavior": "Static offline view only",
+      "future_integration_requirements": "Explicit owner workflow decision; no client click treated as authentication",
+      "owner_decision_status": "Pending",
+      "verification": "Static source only"
+    },
+    {
+      "id": "APP-001",
+      "control_name": "Login ID field",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "Auth",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "PR5 baseline android/src/components/Auth.jsx",
+      "current_component": "android/src/components/Auth.jsx",
+      "current_callback": "Input state",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Local only",
+      "sensitivity_classification": "UI only",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Existing behavior",
+      "future_integration_requirements": "No new integration",
+      "owner_decision_status": "Retain",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-002",
+      "control_name": "Password field",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "Auth",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "PR5 baseline android/src/components/Auth.jsx",
+      "current_component": "android/src/components/Auth.jsx",
+      "current_callback": "Input state",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Local only",
+      "sensitivity_classification": "UI only",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Existing behavior",
+      "future_integration_requirements": "No new integration",
+      "owner_decision_status": "Retain",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-003",
+      "control_name": "Show/hide password",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "Auth",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "PR5 baseline android/src/components/Auth.jsx",
+      "current_component": "android/src/components/Auth.jsx",
+      "current_callback": "Toggle type",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Local only",
+      "sensitivity_classification": "UI only",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Existing behavior",
+      "future_integration_requirements": "No new integration",
+      "owner_decision_status": "Retain",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-004",
+      "control_name": "Sign in",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "Auth",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "PR5 baseline android/src/components/Auth.jsx",
+      "current_component": "android/src/components/Auth.jsx",
+      "current_callback": "adapter.login",
+      "category": "FULLY FUNCTIONAL",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Reviewed API/native adapter; conditional on server capability/role/approval",
+      "sensitivity_classification": "Existing account service",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Existing behavior",
+      "future_integration_requirements": "No new integration",
+      "owner_decision_status": "Retain",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-005",
+      "control_name": "Six-digit OTP entry",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "Auth",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "PR5 baseline android/src/components/Auth.jsx",
+      "current_component": "android/src/components/Auth.jsx",
+      "current_callback": "Input state",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Local only",
+      "sensitivity_classification": "UI only",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Existing behavior",
+      "future_integration_requirements": "No new integration",
+      "owner_decision_status": "Retain",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-006",
+      "control_name": "Verify code",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "Auth",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "PR5 baseline android/src/components/Auth.jsx",
+      "current_component": "android/src/components/Auth.jsx",
+      "current_callback": "adapter.verify",
+      "category": "FULLY FUNCTIONAL",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Reviewed API/native adapter; conditional on server capability/role/approval",
+      "sensitivity_classification": "Existing account service",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Existing behavior",
+      "future_integration_requirements": "No new integration",
+      "owner_decision_status": "Retain",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-007",
+      "control_name": "Restart login / Request another code",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "Auth",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "PR5 baseline android/src/components/Auth.jsx",
+      "current_component": "android/src/components/Auth.jsx",
+      "current_callback": "onBack",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Local only",
+      "sensitivity_classification": "UI only",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Existing behavior",
+      "future_integration_requirements": "No new integration",
+      "owner_decision_status": "Retain",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-008",
+      "control_name": "Refresh account",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "Settings",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "PR5 baseline android/src/components/Settings.jsx",
+      "current_component": "android/src/components/Settings.jsx",
+      "current_callback": "adapter.profile",
+      "category": "FULLY FUNCTIONAL",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Reviewed API/native adapter; conditional on server capability/role/approval",
+      "sensitivity_classification": "Existing account service",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Existing behavior",
+      "future_integration_requirements": "No new integration",
+      "owner_decision_status": "Retain",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-009",
+      "control_name": "Settings logout",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "Settings",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "PR5 baseline android/src/components/Settings.jsx",
+      "current_component": "android/src/components/Settings.jsx",
+      "current_callback": "adapter.logout",
+      "category": "FULLY FUNCTIONAL",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Reviewed API/native adapter; conditional on server capability/role/approval",
+      "sensitivity_classification": "Existing account service",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Existing behavior",
+      "future_integration_requirements": "No new integration",
+      "owner_decision_status": "Retain",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-010",
+      "control_name": "Check Firebase status",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "FirebaseSettings",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "PR5 baseline android/src/components/FirebaseSettings.jsx",
+      "current_component": "android/src/components/FirebaseSettings.jsx",
+      "current_callback": "adapter.firebase status with capability guard",
+      "category": "FULLY FUNCTIONAL",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Reviewed API/native adapter; conditional on server capability/role/approval",
+      "sensitivity_classification": "Existing account service",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Existing behavior",
+      "future_integration_requirements": "No new integration",
+      "owner_decision_status": "Retain",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-011",
+      "control_name": "Request Firebase Link",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "FirebaseSettings",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "PR5 baseline android/src/components/FirebaseSettings.jsx",
+      "current_component": "android/src/components/FirebaseSettings.jsx",
+      "current_callback": "adapter.firebase request when manager enabled",
+      "category": "FULLY FUNCTIONAL",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Reviewed API/native adapter; conditional on server capability/role/approval",
+      "sensitivity_classification": "Existing account service",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Existing behavior",
+      "future_integration_requirements": "No new integration",
+      "owner_decision_status": "Retain",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-012",
+      "control_name": "View approved Firebase link",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "FirebaseSettings",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "PR5 baseline android/src/components/FirebaseSettings.jsx",
+      "current_component": "android/src/components/FirebaseSettings.jsx",
+      "current_callback": "adapter.firebase link when approved",
+      "category": "FULLY FUNCTIONAL",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Reviewed API/native adapter; conditional on server capability/role/approval",
+      "sensitivity_classification": "Existing account service",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Existing behavior",
+      "future_integration_requirements": "No new integration",
+      "owner_decision_status": "Retain",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-013",
+      "control_name": "Application information",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "Settings",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "PR5 baseline android/src/components/Settings.jsx",
+      "current_component": "android/src/components/Settings.jsx",
+      "current_callback": "details disclosure",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Local only",
+      "sensitivity_classification": "UI only",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Existing behavior",
+      "future_integration_requirements": "No new integration",
+      "owner_decision_status": "Retain",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-014",
+      "control_name": "Close app",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "App",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "android/src/App.jsx",
+      "current_component": "android/src/App.jsx",
+      "current_callback": "NativeApp.exitApp after logout; native execution not tested",
+      "category": "FULLY FUNCTIONAL",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Reviewed API/native adapter; conditional on server capability/role/approval",
+      "sensitivity_classification": "Existing account service",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Existing behavior",
+      "future_integration_requirements": "No new integration",
+      "owner_decision_status": "Retain",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-015",
+      "control_name": "Stay here",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "App",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "android/src/App.jsx",
+      "current_component": "android/src/App.jsx",
+      "current_callback": "setExitPrompt(false)",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Local only",
+      "sensitivity_classification": "UI only",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Existing behavior",
+      "future_integration_requirements": "No new integration",
+      "owner_decision_status": "Retain",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-016",
+      "control_name": "APK Management",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "App",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "android/src/App.jsx",
+      "current_component": "android/src/App.jsx",
+      "current_callback": "setTab",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Local only",
+      "sensitivity_classification": "UI only",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Existing behavior",
+      "future_integration_requirements": "No new integration",
+      "owner_decision_status": "Retain",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-017",
+      "control_name": "Monitoring",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "App",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "android/src/App.jsx",
+      "current_component": "android/src/App.jsx",
+      "current_callback": "setTab",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Local only",
+      "sensitivity_classification": "UI only",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Existing behavior",
+      "future_integration_requirements": "No new integration",
+      "owner_decision_status": "Retain",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-018",
+      "control_name": "Future",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "App",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "android/src/App.jsx",
+      "current_component": "android/src/App.jsx",
+      "current_callback": "setTab",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Local only",
+      "sensitivity_classification": "UI only",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Existing behavior",
+      "future_integration_requirements": "No new integration",
+      "owner_decision_status": "Retain",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-019",
+      "control_name": "Settings",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "App",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "android/src/App.jsx",
+      "current_component": "android/src/App.jsx",
+      "current_callback": "setTab",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Local only",
+      "sensitivity_classification": "UI only",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Existing behavior",
+      "future_integration_requirements": "No new integration",
+      "owner_decision_status": "Retain",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-020",
+      "control_name": "Crimson",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "Settings",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "PR5 baseline android/src/components/Settings.jsx",
+      "current_component": "android/src/components/Settings.jsx",
+      "current_callback": "setTheme",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Local only",
+      "sensitivity_classification": "UI only",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Existing behavior",
+      "future_integration_requirements": "No new integration",
+      "owner_decision_status": "Retain",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-021",
+      "control_name": "Amethyst",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "Settings",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "PR5 baseline android/src/components/Settings.jsx",
+      "current_component": "android/src/components/Settings.jsx",
+      "current_callback": "setTheme",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Local only",
+      "sensitivity_classification": "UI only",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Existing behavior",
+      "future_integration_requirements": "No new integration",
+      "owner_decision_status": "Retain",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-022",
+      "control_name": "Emerald",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "Settings",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "PR5 baseline android/src/components/Settings.jsx",
+      "current_component": "android/src/components/Settings.jsx",
+      "current_callback": "setTheme",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Local only",
+      "sensitivity_classification": "UI only",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Existing behavior",
+      "future_integration_requirements": "No new integration",
+      "owner_decision_status": "Retain",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-023",
+      "control_name": "Gold",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "Settings",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "PR5 baseline android/src/components/Settings.jsx",
+      "current_component": "android/src/components/Settings.jsx",
+      "current_callback": "setTheme",
+      "category": "LOCAL UI FUNCTIONAL",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Local only",
+      "sensitivity_classification": "UI only",
+      "reason_for_disabling": null,
+      "safe_temporary_behavior": "Existing behavior",
+      "future_integration_requirements": "No new integration",
+      "owner_decision_status": "Retain",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-024",
+      "control_name": "Change password",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "Settings",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "PR5 baseline android/src/components/Settings.jsx",
+      "current_component": "android/src/components/Settings.jsx",
+      "current_callback": "Disclosure explains missing endpoint; no substitute operation",
+      "category": "NOT IMPLEMENTED",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Not implemented",
+      "sensitivity_classification": "UI only",
+      "reason_for_disabling": "No supported endpoint supplied",
+      "safe_temporary_behavior": "Explicit unavailable disclosure",
+      "future_integration_requirements": "Reviewed endpoint contract",
+      "owner_decision_status": "Pending endpoint work",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-025",
+      "control_name": "Login activity history",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "Settings",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "PR5 baseline android/src/components/Settings.jsx",
+      "current_component": "android/src/components/Settings.jsx",
+      "current_callback": "Disclosure explains missing endpoint; no substitute operation",
+      "category": "NOT IMPLEMENTED",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Not implemented",
+      "sensitivity_classification": "UI only",
+      "reason_for_disabling": "No supported endpoint supplied",
+      "safe_temporary_behavior": "Explicit unavailable disclosure",
+      "future_integration_requirements": "Reviewed endpoint contract",
+      "owner_decision_status": "Pending endpoint work",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-026",
+      "control_name": "Active sessions",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "Settings",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "PR5 baseline android/src/components/Settings.jsx",
+      "current_component": "android/src/components/Settings.jsx",
+      "current_callback": "Disclosure explains missing endpoint; no substitute operation",
+      "category": "NOT IMPLEMENTED",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Not implemented",
+      "sensitivity_classification": "UI only",
+      "reason_for_disabling": "No supported endpoint supplied",
+      "safe_temporary_behavior": "Explicit unavailable disclosure",
+      "future_integration_requirements": "Reviewed endpoint contract",
+      "owner_decision_status": "Pending endpoint work",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-027",
+      "control_name": "Telegram account connection",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "Settings",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "PR5 baseline android/src/components/Settings.jsx",
+      "current_component": "android/src/components/Settings.jsx",
+      "current_callback": "Disclosure explains missing endpoint; no substitute operation",
+      "category": "NOT IMPLEMENTED",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Not implemented",
+      "sensitivity_classification": "UI only",
+      "reason_for_disabling": "No supported endpoint supplied",
+      "safe_temporary_behavior": "Explicit unavailable disclosure",
+      "future_integration_requirements": "Reviewed endpoint contract",
+      "owner_decision_status": "Pending endpoint work",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    },
+    {
+      "id": "APP-028",
+      "control_name": "Two-step verification",
+      "source_site_id": "CURRENT_ANDROID",
+      "screen": "Settings",
+      "original_function": "Current reviewed Android wrapper; not original website business logic",
+      "original_source_location": "PR5 baseline android/src/components/Settings.jsx",
+      "current_component": "android/src/components/Settings.jsx",
+      "current_callback": "Disclosure explains missing endpoint; no substitute operation",
+      "category": "NOT IMPLEMENTED",
+      "ui_interaction_status": "Existing response retained",
+      "backend_implementation_status": "Not implemented",
+      "sensitivity_classification": "UI only",
+      "reason_for_disabling": "No supported endpoint supplied",
+      "safe_temporary_behavior": "Explicit unavailable disclosure",
+      "future_integration_requirements": "Reviewed endpoint contract",
+      "owner_decision_status": "Pending endpoint work",
+      "verification": "Auth/Firebase JS tests and routed browser tests; native device execution unavailable"
+    }
+  ],
+  "raw_source_control_metadata": [
+    {
+      "file": "4-index.html",
+      "id": "ORIG-001",
+      "type": "button",
+      "scope": "Zu",
+      "line": 18645,
+      "name": "button",
+      "handlers": {
+        "onClick": "d"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-002",
+      "type": "div",
+      "scope": "s1",
+      "line": 18998,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-003",
+      "type": "button",
+      "scope": "s1",
+      "line": 19001,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-004",
+      "type": "button",
+      "scope": "s1",
+      "line": 19029,
+      "name": "Share connection link",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-005",
+      "type": "button",
+      "scope": "s1",
+      "line": 19036,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-006",
+      "type": "button",
+      "scope": "s1",
+      "line": 19047,
+      "name": "Deselect All Select All (<dynamic>)",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-007",
+      "type": "button",
+      "scope": "s1",
+      "line": 19053,
+      "name": "Open <dynamic> Account<dynamic> Merged",
+      "handlers": {
+        "onClick": "openMerged"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-008",
+      "type": "button",
+      "scope": "s1",
+      "line": 19057,
+      "name": "Share",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-009",
+      "type": "button",
+      "scope": "s1",
+      "line": 19067,
+      "name": "New Account",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-010",
+      "type": "button",
+      "scope": "s1",
+      "line": 19080,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-011",
+      "type": "label",
+      "scope": "s1",
+      "line": 19097,
+      "name": "Icon control",
+      "handlers": {
+        "onDrop": "bt",
+        "onDragOver": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-012",
+      "type": "input",
+      "scope": "s1",
+      "line": 19116,
+      "name": "file",
+      "handlers": {
+        "onChange": "it",
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-013",
+      "type": "button",
+      "scope": "s1",
+      "line": 19146,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "y"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-014",
+      "type": "button",
+      "scope": "s1",
+      "line": 19162,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "y"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-015",
+      "type": "textarea",
+      "scope": "s1",
+      "line": 19222,
+      "name": "https://project1.firebaseio.com\nhttps://project2.firebaseio.com\nhttps://project3.firebaseio.com",
+      "handlers": {
+        "onChange": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-016",
+      "type": "input",
+      "scope": "s1",
+      "line": 19236,
+      "name": "Your Firebase secret key",
+      "handlers": {
+        "onChange": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-017",
+      "type": "button",
+      "scope": "s1",
+      "line": 19246,
+      "name": "Connecting\u2026 Add <dynamic> Account(s)",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-018",
+      "type": "button",
+      "scope": "s1",
+      "line": 19283,
+      "name": "Cancel",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-019",
+      "type": "div",
+      "scope": "s1",
+      "line": 19299,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-020",
+      "type": "div",
+      "scope": "s1",
+      "line": 19306,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-021",
+      "type": "button",
+      "scope": "s1",
+      "line": 19327,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-022",
+      "type": "button",
+      "scope": "s1",
+      "line": 19339,
+      "name": "Copied! Copy",
+      "handlers": {
+        "onClick": "I"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-023",
+      "type": "button",
+      "scope": "o1",
+      "line": 19546,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-024",
+      "type": "div",
+      "scope": "f1",
+      "line": 19580,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "tt"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-025",
+      "type": "button",
+      "scope": "f1",
+      "line": 19608,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-026",
+      "type": "button",
+      "scope": "f1",
+      "line": 19627,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-027",
+      "type": "div",
+      "scope": "d1",
+      "line": 19883,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "d"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-028",
+      "type": "div",
+      "scope": "d1",
+      "line": 19888,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-029",
+      "type": "button",
+      "scope": "d1",
+      "line": 19911,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "$"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-030",
+      "type": "button",
+      "scope": "d1",
+      "line": 19917,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "d"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-031",
+      "type": "button",
+      "scope": "d1",
+      "line": 19966,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-032",
+      "type": "button",
+      "scope": "d1",
+      "line": 20057,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "V"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-033",
+      "type": "button",
+      "scope": "d1",
+      "line": 20113,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "V"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-034",
+      "type": "button",
+      "scope": "d1",
+      "line": 20141,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "V"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-035",
+      "type": "button",
+      "scope": "d1",
+      "line": 20251,
+      "name": "\ud83d\udccb Copy",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-036",
+      "type": "button",
+      "scope": "d1",
+      "line": 20273,
+      "name": "\ud83d\udccb Copy",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-037",
+      "type": "button",
+      "scope": "d1",
+      "line": 20292,
+      "name": "SIM ",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-038",
+      "type": "input",
+      "scope": "d1",
+      "line": 20302,
+      "name": "+919876543210",
+      "handlers": {
+        "onChange": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-039",
+      "type": "textarea",
+      "scope": "d1",
+      "line": 20313,
+      "name": "Type your message here\u2026",
+      "handlers": {
+        "onChange": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-040",
+      "type": "button",
+      "scope": "d1",
+      "line": 20323,
+      "name": "Sending\u2026 Send via SIM <dynamic>",
+      "handlers": {
+        "onClick": "ot"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-041",
+      "type": "button",
+      "scope": "d1",
+      "line": 20332,
+      "name": "Use device number: ",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-042",
+      "type": "button",
+      "scope": "h1",
+      "line": 20357,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "tt"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-043",
+      "type": "input",
+      "scope": "p1",
+      "line": 20707,
+      "name": "Search devices...",
+      "handlers": {
+        "onChange": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-044",
+      "type": "button",
+      "scope": "p1",
+      "line": 20722,
+      "name": "Logout",
+      "handlers": {
+        "onClick": "Z"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-045",
+      "type": "button",
+      "scope": "p1",
+      "line": 20728,
+      "name": "Share merged accounts",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-046",
+      "type": "a",
+      "scope": "p1",
+      "line": 20739,
+      "name": "Icon control",
+      "handlers": {}
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-047",
+      "type": "button",
+      "scope": "p1",
+      "line": 20834,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-048",
+      "type": "button",
+      "scope": "p1",
+      "line": 20840,
+      "name": "SMS",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-049",
+      "type": "select",
+      "scope": "p1",
+      "line": 20860,
+      "name": "Icon control",
+      "handlers": {
+        "onChange": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-050",
+      "type": "button",
+      "scope": "p1",
+      "line": 20877,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "I"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-051",
+      "type": "div",
+      "scope": "p1",
+      "line": 20951,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-052",
+      "type": "div",
+      "scope": "p1",
+      "line": 20955,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-053",
+      "type": "button",
+      "scope": "p1",
+      "line": 20993,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-054",
+      "type": "input",
+      "scope": "p1",
+      "line": 21045,
+      "name": "Rouven",
+      "handlers": {
+        "onChange": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "4-index.html",
+      "id": "ORIG-055",
+      "type": "button",
+      "scope": "p1",
+      "line": 21074,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-056",
+      "type": "button",
+      "scope": "Zu",
+      "line": 18143,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "d"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-057",
+      "type": "div",
+      "scope": "s1",
+      "line": 18439,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-058",
+      "type": "button",
+      "scope": "s1",
+      "line": 18442,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-059",
+      "type": "button",
+      "scope": "s1",
+      "line": 18470,
+      "name": "Share connection link",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-060",
+      "type": "button",
+      "scope": "s1",
+      "line": 18477,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-061",
+      "type": "button",
+      "scope": "s1",
+      "line": 18488,
+      "name": "Deselect All Select All (<dynamic>)",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-062",
+      "type": "button",
+      "scope": "s1",
+      "line": 18494,
+      "name": "Open <dynamic> Account<dynamic> Merged",
+      "handlers": {
+        "onClick": "openMerged"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-063",
+      "type": "button",
+      "scope": "s1",
+      "line": 18498,
+      "name": "Share",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-064",
+      "type": "button",
+      "scope": "s1",
+      "line": 18508,
+      "name": "New Account",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-065",
+      "type": "button",
+      "scope": "s1",
+      "line": 18521,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-066",
+      "type": "label",
+      "scope": "s1",
+      "line": 18538,
+      "name": "Icon control",
+      "handlers": {
+        "onDrop": "bt",
+        "onDragOver": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-067",
+      "type": "input",
+      "scope": "s1",
+      "line": 18557,
+      "name": "file",
+      "handlers": {
+        "onChange": "it",
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-068",
+      "type": "button",
+      "scope": "s1",
+      "line": 18587,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "y"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-069",
+      "type": "button",
+      "scope": "s1",
+      "line": 18603,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "y"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-070",
+      "type": "textarea",
+      "scope": "s1",
+      "line": 18663,
+      "name": "https://project1.firebaseio.com\nhttps://project2.firebaseio.com\nhttps://project3.firebaseio.com",
+      "handlers": {
+        "onChange": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-071",
+      "type": "input",
+      "scope": "s1",
+      "line": 18677,
+      "name": "Your Firebase secret key",
+      "handlers": {
+        "onChange": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-072",
+      "type": "button",
+      "scope": "s1",
+      "line": 18687,
+      "name": "Connecting\u2026 Add <dynamic> Account(s)",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-073",
+      "type": "button",
+      "scope": "s1",
+      "line": 18724,
+      "name": "Cancel",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-074",
+      "type": "div",
+      "scope": "s1",
+      "line": 18740,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-075",
+      "type": "div",
+      "scope": "s1",
+      "line": 18747,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-076",
+      "type": "button",
+      "scope": "s1",
+      "line": 18768,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-077",
+      "type": "button",
+      "scope": "s1",
+      "line": 18780,
+      "name": "Copied! Copy",
+      "handlers": {
+        "onClick": "I"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-078",
+      "type": "button",
+      "scope": "o1",
+      "line": 18983,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-079",
+      "type": "div",
+      "scope": "f1",
+      "line": 19012,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "tt"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-080",
+      "type": "button",
+      "scope": "f1",
+      "line": 19040,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-081",
+      "type": "button",
+      "scope": "f1",
+      "line": 19059,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-082",
+      "type": "div",
+      "scope": "d1",
+      "line": 19284,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "d"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-083",
+      "type": "div",
+      "scope": "d1",
+      "line": 19289,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-084",
+      "type": "button",
+      "scope": "d1",
+      "line": 19312,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "$"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-085",
+      "type": "button",
+      "scope": "d1",
+      "line": 19318,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "d"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-086",
+      "type": "button",
+      "scope": "d1",
+      "line": 19367,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-087",
+      "type": "button",
+      "scope": "d1",
+      "line": 19458,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "V"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-088",
+      "type": "button",
+      "scope": "d1",
+      "line": 19514,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "V"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-089",
+      "type": "button",
+      "scope": "d1",
+      "line": 19542,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "V"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-090",
+      "type": "button",
+      "scope": "d1",
+      "line": 19648,
+      "name": "\ud83d\udccb Copy",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-091",
+      "type": "button",
+      "scope": "d1",
+      "line": 19670,
+      "name": "\ud83d\udccb Copy",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-092",
+      "type": "button",
+      "scope": "d1",
+      "line": 19689,
+      "name": "SIM ",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-093",
+      "type": "input",
+      "scope": "d1",
+      "line": 19699,
+      "name": "+919876543210",
+      "handlers": {
+        "onChange": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-094",
+      "type": "textarea",
+      "scope": "d1",
+      "line": 19710,
+      "name": "Type your message here\u2026",
+      "handlers": {
+        "onChange": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-095",
+      "type": "button",
+      "scope": "d1",
+      "line": 19720,
+      "name": "Sending\u2026 Send via SIM <dynamic>",
+      "handlers": {
+        "onClick": "ot"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-096",
+      "type": "button",
+      "scope": "d1",
+      "line": 19729,
+      "name": "Use device number: ",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-097",
+      "type": "button",
+      "scope": "h1",
+      "line": 19754,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "tt"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-098",
+      "type": "input",
+      "scope": "p1",
+      "line": 20043,
+      "name": "Search devices...",
+      "handlers": {
+        "onChange": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-099",
+      "type": "button",
+      "scope": "p1",
+      "line": 20058,
+      "name": "Logout",
+      "handlers": {
+        "onClick": "Z"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-100",
+      "type": "button",
+      "scope": "p1",
+      "line": 20064,
+      "name": "Share merged accounts",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-101",
+      "type": "a",
+      "scope": "p1",
+      "line": 20075,
+      "name": "Icon control",
+      "handlers": {}
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-102",
+      "type": "button",
+      "scope": "p1",
+      "line": 20170,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-103",
+      "type": "button",
+      "scope": "p1",
+      "line": 20176,
+      "name": "SMS",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-104",
+      "type": "select",
+      "scope": "p1",
+      "line": 20196,
+      "name": "Icon control",
+      "handlers": {
+        "onChange": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-105",
+      "type": "button",
+      "scope": "p1",
+      "line": 20213,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "I"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-106",
+      "type": "div",
+      "scope": "p1",
+      "line": 20287,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-107",
+      "type": "div",
+      "scope": "p1",
+      "line": 20291,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-108",
+      "type": "button",
+      "scope": "p1",
+      "line": 20329,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-109",
+      "type": "input",
+      "scope": "p1",
+      "line": 20381,
+      "name": "Rouven",
+      "handlers": {
+        "onChange": "ArrowFunctionExpression"
+      }
+    },
+    {
+      "file": "5-index.html.bak",
+      "id": "ORIG-110",
+      "type": "button",
+      "scope": "p1",
+      "line": 20410,
+      "name": "Icon control",
+      "handlers": {
+        "onClick": "ArrowFunctionExpression"
+      }
+    }
+  ]
+}

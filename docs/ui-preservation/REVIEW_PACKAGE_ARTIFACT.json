@@ -1,0 +1,13 @@
+{
+  "path": "/workspace/artifacts/NEMESIS_COMPLETE_ORIGINAL_SOURCE_REVIEW.zip",
+  "bytes": 1408291,
+  "sha256": "73d0d80da68bd03a7f17af9119dec00e04c3cade580c63f677ed13545aad9835",
+  "file_count": 167,
+  "encrypted_all_entries": true,
+  "authenticated_extraction_verified": true,
+  "internal_manifest_and_checksums_verified": true,
+  "wrong_password_rejected": true,
+  "tampered_authentication_tag_rejected": true,
+  "owner_receipt_confirmed": false,
+  "final_ui_matrix_included": true
+}

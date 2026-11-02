@@ -1,9 +1,11 @@
-// Derived render expressions only. Original business logic is not bundled.
+// Preserved render expressions with reviewed local UI state; historical operations stay disconnected.
 import React from 'react';
+import {useReviewNotice,SafeCopy,PreservedDeviceCard,PreservedDeviceDrawer,localDeviceView} from '../components/PreservedControls.jsx';
 import * as r from 'react/jsx-runtime';
 import * as jt from 'react';
 import {uh,eh,I0,ch,Wl,tp,ap,lp,sp,$l,cp,fp,hp,pp,gp,ys,xp,Sp,Ap,gs,jp,oh,fh,dh,kp,Rp,bs,nl,hh} from './icons.js';
-function NotIntegrated(){return r.jsx('p',{className:'integration-note',children:'This feature requires an approved authenticated backend.'})} const Zu=NotIntegrated,f1=NotIntegrated,d1=NotIntegrated;
+const f1=PreservedDeviceCard,d1=PreservedDeviceDrawer;
+function Zu(){const [review,dialog]=useReviewNotice();return r.jsxs(r.Fragment,{children:[r.jsx(SafeCopy,{review}),dialog]})}
 function h1({
     message: A,
     onDismiss: tt
@@ -51,15 +53,17 @@ function m1() {
         })]
     })
 }
-export function OriginalAccounts(){
-const [tt, b] = jt.useState([]), [d, S] = jt.useState(!1), [f, p] = jt.useState(""), [h, o] = jt.useState(""), [x, T] = jt.useState(""), [w, C] = jt.useState(!1), [v, E] = jt.useState(""), [g, z] = jt.useState(!1), [N, k] = jt.useState(!1), [M, H] = jt.useState(""), [L, nt] = jt.useState(null), [V, ot] = jt.useState(""), [mSel, setMSel] = jt.useState(new Set), $ = jt.useRef(null);
-const blocked=()=>T('Unavailable in this offline development build. Do not enter production secrets.');
-const at=blocked,c=blocked,I=blocked,Z=blocked,openMerged=blocked,toggleSel=blocked;
-const yn=async()=>{throw new Error('Live Firebase access is unavailable in offline development mode')},nh=()=>{},A=blocked;
-const it=e=>{e.target.value='';H('APK inspection is awaiting a secure integration. No file has been read or uploaded.')};
-const bt=e=>{e.preventDefault();H('APK inspection is awaiting a secure integration. No file has been read or uploaded.')};
+export function OriginalAccounts({uiAccounts=[]}){
+const [review,reviewDialog]=useReviewNotice();
+const [tt, b] = jt.useState(()=>uiAccounts.map(a=>({id:String(a.id),url:String(a.url),date:'Local display record',key:'Not loaded'}))), [d, S] = jt.useState(!1), [f, p] = jt.useState(""), [h, o] = jt.useState(""), [x, T] = jt.useState(""), [w, C] = jt.useState(!1), [v, E] = jt.useState(""), [g, z] = jt.useState(!1), [N, k] = jt.useState(!1), [M, H] = jt.useState(""), [L, nt] = jt.useState(null), [V, ot] = jt.useState(""), [mSel, setMSel] = jt.useState(new Set), $ = jt.useRef(null);
+const blocked=()=>review('Legacy Firebase operation');
+const at=()=>review('Connect Firebase account'),c=(account,event)=>{event?.stopPropagation();E('No share link created. Credential sharing is under review.')},I=()=>review('Copy connection link'),Z=(id,event)=>{event?.stopPropagation();review('Delete saved account — confirmation required')},openMerged=()=>review('Open merged accounts'),toggleSel=(id,event)=>{event?.stopPropagation();setMSel(old=>{const next=new Set(old);next.has(id)?next.delete(id):next.add(id);return next})};
+const A=()=>review('Connect Firebase account');
+React.useEffect(()=>{const back=e=>{if(e.defaultPrevented)return;if(v||d){e.preventDefault();e.stopImmediatePropagation();if(v)E('');else S(false)}};const esc=e=>{if(e.key==='Escape'&&!document.querySelector('[data-safe-dialog]'))back(e)};window.addEventListener('panel:back',back);window.addEventListener('keydown',esc,{capture:true});return()=>{window.removeEventListener('panel:back',back);window.removeEventListener('keydown',esc,{capture:true})}},[v,d]);
+const it=e=>{e.target.value='';H('No file has been read or uploaded.');review('APK inspection')};
+const bt=e=>{e.preventDefault();H('No file has been read or uploaded.');review('APK drop inspection')};
 const y=()=>{nt(null);H('');ot('')};
-return r.jsxs("div", {
+const content=r.jsxs("div", {
         className: "min-h-screen flex items-center justify-center relative overflow-hidden",
         style: {
             background: "transparent"
@@ -232,6 +236,10 @@ return r.jsxs("div", {
                             }), "No saved accounts"]
                         }) : tt.map(_ => r.jsxs("div", {
                             onClick: () => !w && at(_),
+                            role: "button",
+                            "aria-label": "Open account "+_.url,
+                            tabIndex: 0,
+                            onKeyDown: e=>{if(e.target!==e.currentTarget)return;if(e.key==="Enter"||e.key===" "){e.preventDefault();at(_)}},
                             className: "flex items-center gap-3 p-3 rounded-xl border border-border hover:border-red-600/40 hover:bg-red-950/20 cursor-pointer transition-all duration-200 group",
                             children: [r.jsx("button", {
                                 onClick: X => toggleSel(_.id, X),
@@ -257,7 +265,7 @@ return r.jsxs("div", {
                                     children: _.url
                                 }), r.jsxs("p", {
                                     className: "text-xs text-muted-foreground mt-0.5 font-mono",
-                                    children: [_.date, " · ", _.key.substring(0, 20), "…"]
+                                    children: [_.date, " · ", "Credentials not loaded"]
                                 })]
                             }), r.jsxs("div", {
                                 className: "flex items-center gap-2",
@@ -270,6 +278,7 @@ return r.jsxs("div", {
                                     })
                                 }), r.jsx("button", {
                                     onClick: X => Z(_.id, X),
+                                    "aria-label": "Delete saved account",
                                     className: "p-1.5 rounded-lg bg-red-950/60 border border-red-900/40 text-red-400 hover:bg-red-900/60 transition-all",
                                     children: r.jsx(oh, {
                                         className: "w-3 h-3"
@@ -308,6 +317,7 @@ return r.jsxs("div", {
                     children: [r.jsxs("div", {
                         className: "flex items-center gap-2 mb-5",
                         children: [r.jsx("button", {
+                            "aria-label": "Back to saved accounts",
                             onClick: () => {
                                 S(!1), T(""), y(), p(""), o("")
                             },
@@ -483,7 +493,7 @@ return r.jsxs("div", {
                                 className: "w-4 h-4"
                             }), w ? "Connecting…" : `Add ${f.split("\n").filter(u => u.trim()).length || 1} Account(s)`]
                         }), r.jsx("button", {
-                            onClick: () => {
+                                                        onClick: () => {
                                 S(!1), T(""), y(), p(""), o("")
                             },
                             className: "px-5 py-3 rounded-xl bg-muted hover:bg-accent text-muted-foreground text-sm font-medium transition-colors",
@@ -528,6 +538,7 @@ return r.jsxs("div", {
                         })]
                     }), r.jsx("button", {
                         onClick: () => E(""),
+                        "aria-label": "Close connection link",
                         className: "p-1.5 rounded-lg hover:bg-accent transition-colors text-muted-foreground",
                         children: r.jsx(nl, {
                             className: "w-4 h-4"
@@ -553,22 +564,26 @@ return r.jsxs("div", {
                         className: "w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5"
                     }), r.jsx("p", {
                         className: "text-xs text-yellow-400/80",
-                        children: "This link contains your Firebase credentials. Only share with trusted people."
+                        children: "Credential sharing remains under review. No connection link is generated in this build."
                     })]
                 })]
             })
         })]
-    })
+    });
+return r.jsxs(r.Fragment,{children:[content,reviewDialog]});
 }
-export function OriginalDashboard({onLogout:b}){
-const Ac=[],d=[],f=false,h=false,x=null,it=0,bt=0,y=0,_=0,mt=[],sv=new Set();
+export function OriginalDashboard({onLogout:b,uiDevices=[],uiAccounts=[]}){
+const [review,reviewDialog]=useReviewNotice();
+const Ac=uiAccounts,f=false,h=false,_=0;
+const [x,T]=jt.useState(null),[sv,setSv]=jt.useState(()=>new Set());
 const [w,C]=jt.useState('all'),[v,E]=jt.useState('new'),[g,z]=jt.useState(''),[N,k]=jt.useState(''),[M,H]=jt.useState('');
 const [smsSearch,setSmsSearch]=jt.useState(false),[smsResults,setSmsResults]=jt.useState([]),[smsSearchQuery,setSmsSearchQuery]=jt.useState('');
 const smsSearchResults=smsResults;
-const X='—',Z=b,xt=k,I=()=>H('Refresh unavailable: no authenticated backend is connected.'),q=I,T=I,Sv=I;
+const d=localDeviceView(uiDevices,'all','name','',sv),mt=localDeviceView(uiDevices,w,v,g,sv),it=d.length,bt=d.filter(dev=>dev.status).length,y=d.length-bt;
+const X='—',Z=b,xt=k,I=()=>review('Refresh dashboard'),q=dev=>T(dev),Sv=id=>setSv(old=>{const next=new Set(old);next.has(id)?next.delete(id):next.add(id);return next});
 React.useEffect(()=>{const close=e=>{if(e.key==='Escape')setSmsSearch(false)};window.addEventListener('keydown',close);return()=>window.removeEventListener('keydown',close)},[]);
 React.useEffect(()=>{const close=e=>{if(smsSearch){e.preventDefault();setSmsSearch(false)}};window.addEventListener('panel:back',close);return()=>window.removeEventListener('panel:back',close)},[smsSearch]);
-return r.jsxs("div", {
+const content=r.jsxs("div", {
         className: "min-h-screen text-white flex flex-col",
         style: { background: "rgba(4,9,18,0.55)" },
         children: [r.jsx("header", {
@@ -707,6 +722,7 @@ return r.jsxs("div", {
                         value: g,
                         onChange: U => z(U.target.value),
                         placeholder: "Search devices...",
+                        "aria-label": "Search devices",
                         className: "w-full pl-9 pr-4 py-2 rounded-xl bg-[#111] border border-[#222] focus:border-[#333] outline-none text-sm text-white placeholder:text-[#444] transition-all"
                     })]
                     }), r.jsxs("div", {
@@ -724,7 +740,7 @@ return r.jsxs("div", {
                             className: "w-3.5 h-3.5"
                         }), "Logout"]
                     }), Ac.length > 1 && r.jsx("button", {
-                        onClick: I,
+                        onClick: () => review("Share merged accounts"),
                         className: "flex items-center gap-2 px-3 py-1.5 rounded-xl border border-[#222] bg-[#111] text-xs text-amber-400 hover:text-amber-300 hover:border-amber-900/40 transition-all",
                         title: "Share merged accounts",
                         children: [r.jsx(Ap, {
@@ -732,6 +748,8 @@ return r.jsxs("div", {
                         })]
                     }), r.jsxs("a", {
                         href: "https://t.me/PoliceBranch",
+                        "aria-label": "Telegram support",
+                        onClick: e => {e.preventDefault();review("Telegram support link")},
                         target: "_blank",
                         rel: "noopener noreferrer",
                         className: "inline-block flex-shrink-0",
@@ -827,6 +845,7 @@ return r.jsxs("div", {
                     children: [
                         ["all", "online", "offline", "saved", "upi", "bank", "card"].map(U => r.jsx("button", {
                             onClick: () => C(U),
+                            "aria-pressed": w===U,
                             className: `px-3 py-1.5 rounded-lg text-xs font-semibold capitalize transition-all ${w===U?U==="bank"?"bg-red-600/20 text-red-400 border border-red-600/30":U==="card"?"bg-purple-600/20 text-purple-400 border border-purple-600/30":U==="saved"?"bg-amber-600/20 text-amber-400 border border-amber-600/30":"bg-red-600/20 text-red-400 border border-red-600/30":"text-[#555] hover:text-[#888]"}`,
                             children: U
                         }, U)), r.jsx("div", {
@@ -834,7 +853,7 @@ return r.jsxs("div", {
                         }), r.jsx("button", {
                             key: "sms-search",
                             onClick: () => {
-                                console.log("SMS button clicked");
+
                                 setSmsSearch(!0)
                             },
                             className: "flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-purple-400 bg-purple-600/20 border border-purple-600/30 hover:bg-purple-600/30 transition-all",
@@ -853,6 +872,7 @@ return r.jsxs("div", {
                             className: "w-px h-4 bg-[#222]"
                         }), r.jsxs("select", {
                             value: v,
+                            "aria-label": "Sort devices",
                             onChange: U => E(U.target.value),
                             className: "bg-[#111] border border-[#222] text-xs text-[#666] rounded-lg px-2 py-1.5 outline-none",
                             children: [r.jsx("option", {
@@ -870,6 +890,7 @@ return r.jsxs("div", {
                             })]
                         }), r.jsx("button", {
                             onClick: I,
+                            "aria-label": "Refresh dashboard",
                             className: "p-2 rounded-lg bg-[#111] border border-[#222] text-[#555] hover:text-[#888] hover:border-[#333] transition-all",
                             children: r.jsx(ys, {
                                 className: "w-3.5 h-3.5"
@@ -986,6 +1007,7 @@ return r.jsxs("div", {
                             })]
                         }), r.jsx("button", {
                             onClick: () => setSmsSearch(!1),
+                            "aria-label": "Close SMS Searcher",
                             className: "text-[#666] hover:text-white transition-colors",
                             children: r.jsx("svg", {
                                 viewBox: "0 0 24 24",
@@ -1067,6 +1089,7 @@ return r.jsxs("div", {
                             autoFocus: !0
                         }), smsSearchQuery && r.jsx("button", {
                             onClick: () => { setSmsSearchQuery(""), setSmsResults([]) },
+                            "aria-label": "Clear SMS search",
                             className: "text-[#666] hover:text-white transition-colors",
                             children: r.jsx("svg", {
                                 viewBox: "0 0 24 24",
@@ -1087,10 +1110,10 @@ return r.jsxs("div", {
                         className: "border-b border-[#1e1e3f] p-4 hover:bg-[#1a1a2e] transition-colors",
                         children: [r.jsx("p", {
                             className: "text-xs text-[#666] mb-1",
-                            children: `${msg.deviceName} · ${msg.from || "Unknown"}`
+                            children: `${msg.deviceName} · ${msg.from || msg.sender || "Unknown"}`
                         }), r.jsx("p", {
                             className: "text-sm text-white break-words",
-                            children: msg.body || "(No content)"
+                            children: msg.body || msg.text || "(No content)"
                         })]
                     }, idx)) : r.jsx("div", {
                         className: "flex flex-col items-center justify-center h-64",
@@ -1111,7 +1134,7 @@ return r.jsxs("div", {
                                 children: "No match"
                             }), r.jsx("p", {
                                 className: "text-[#555] text-xs",
-                                children: smsSearchQuery ? "Still loading more devices..." : "Type to search..."
+                                children: smsSearchQuery ? "No matching locally available messages." : "Type to search..."
                             })]
                         })
                     })
@@ -1122,13 +1145,13 @@ return r.jsxs("div", {
             children: N
         }), x && r.jsx(d1, {
             dev: x,
-            fbUrl: x._srcUrl || Ac[0].url,
-            fbKey: x._srcKey || Ac[0].key,
+            review,
             onClose: () => T(null),
             onDelete: () => {
                 T(null), I()
             },
             showToast: xt
         })]
-    })
+    });
+return r.jsxs(r.Fragment,{children:[content,reviewDialog]});
 }

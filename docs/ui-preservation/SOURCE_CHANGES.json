@@ -1,0 +1,30 @@
+{
+  "base_commit": "141910afdbd81989697f89e9d6d1ba1933218105",
+  "scope": "Authorized safe UI interactions; no historical sensitive implementation import.",
+  "files": [
+    {
+      "path": "android/src/generated/OriginalUI.jsx",
+      "baseline_path": "legacy/ui-preservation-baseline/OriginalUI.jsx",
+      "original_sha256": "f12dde2cd37fa04ecca60a443f9f1e71d89288a1bfc6669e9885b14f21a82f80",
+      "current_sha256": "a037bf5c3608147ff3823b3e15b4724937d7ef02366ce858ebec283c003fbf79"
+    },
+    {
+      "path": "android/src/styles.mjs",
+      "baseline_path": "legacy/ui-preservation-baseline/styles.mjs",
+      "original_sha256": "e97d48a7f8f2e6cd1b9a46545b17c5ea2d2ecacabf9d2f441cfeb47c358630ab",
+      "current_sha256": "71fda64637c1d619165274ae51bebafe6dc71f1e9b60ea354f4ebf2656b05e57"
+    },
+    {
+      "path": "android/tests/browser.mjs",
+      "baseline_path": "legacy/ui-preservation-baseline/browser.mjs",
+      "original_sha256": "e3d43a57bd814e877ab74f9134510a77e8a1a7f2b065c188decd4cbb86f42df9",
+      "current_sha256": "9b7bfcb540f2ad098158e7e8b5471ab94141fb199074dbf21491f284af119dc5"
+    },
+    {
+      "path": "android/tests/isolation.test.mjs",
+      "baseline_path": "legacy/ui-preservation-baseline/isolation.test.mjs",
+      "original_sha256": "f09a1ec6bd3d18c97467ae6b9dd0cb478513c4ffbd7370930b48d6e0eaab6c33",
+      "current_sha256": "b8b7bf3b497bd87c3997d28c97174ea8ae63825edeeb550cae7ec2823d078b99"
+    }
+  ]
+}

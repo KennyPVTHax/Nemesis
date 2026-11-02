@@ -1,0 +1,5 @@
+import React from 'react';import {createRoot} from 'react-dom/client';import '../src/styles.mjs';
+import {OriginalAccounts,OriginalDashboard} from '../src/generated/OriginalUI.jsx';
+const devices=[{id:'demo-b',name:'DEMO Beacon',demo:true,status:true,batteryPercent:80,android:'Test fixture',provider:'Example network',_sms:[{text:'Demo appointment reminder',sender:'DEMO',time:'Fixture only'}]},{id:'demo-a',name:'DEMO Atlas',demo:true,status:false,batteryPercent:20,android:'Test fixture'}];
+const accounts=[{id:'demo-account-a',url:'https://a.example.invalid'},{id:'demo-account-b',url:'https://b.example.invalid'}];
+createRoot(document.getElementById('root')).render(<><p>Isolated UI demonstration fixtures — no live devices, accounts or messages.</p><div className="original-dashboard"><OriginalDashboard uiDevices={devices} uiAccounts={accounts} onLogout={()=>document.body.dataset.logout='local-fixture'}/></div><div className="original-apk"><OriginalAccounts uiAccounts={accounts}/></div></>);
